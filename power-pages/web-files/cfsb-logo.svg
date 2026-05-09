@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 590 140" role="img" aria-labelledby="title desc">
+  <title id="title">CFSB</title>
+  <desc id="desc">Community Financial Services Bank logo</desc>
+  <g fill="none" stroke="#000" stroke-linecap="round" stroke-width="6.8" transform="translate(74 70)">
+    <path d="M-52 -6C-46 -38 -18 -58 17 -58"/>
+    <path d="M-46 -19C-34 -48 -4 -62 30 -52"/>
+    <path d="M-36 -32C-16 -56 18 -57 45 -37"/>
+    <path d="M-12 -56C20 -49 43 -28 52 6"/>
+    <path d="M18 -52C48 -38 61 -6 51 28"/>
+    <path d="M38 -36C58 -13 55 22 32 46"/>
+    <path d="M52 9C42 42 14 58 -19 54"/>
+    <path d="M41 29C21 55 -13 61 -42 41"/>
+    <path d="M20 53C-12 49 -41 29 -52 -5"/>
+    <path d="M-14 54C-44 39 -59 9 -51 -24"/>
+  </g>
+  <text x="154" y="92" fill="#000" font-family="Georgia, 'Times New Roman', serif" font-size="88" font-weight="700" letter-spacing="-4">CFSB</text>
+  <text x="158" y="123" fill="#000" font-family="Inter, Arial, sans-serif" font-size="12.5" font-weight="800" letter-spacing="3.2">COMMUNITY FINANCIAL SERVICES BANK</text>
+</svg>

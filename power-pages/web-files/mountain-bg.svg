@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#314552"/>
+      <stop offset="0.38" stop-color="#6f858b"/>
+      <stop offset="0.7" stop-color="#143047"/>
+      <stop offset="1" stop-color="#06101a"/>
+    </linearGradient>
+    <radialGradient id="mist" cx="34%" cy="22%" r="56%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.36"/>
+      <stop offset="0.54" stop-color="#bad8de" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#092132" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="72%" cy="18%" r="62%">
+      <stop offset="0" stop-color="#d5edff" stop-opacity="0.28"/>
+      <stop offset="0.46" stop-color="#5fb7c8" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#06101a" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <rect width="1600" height="900" fill="url(#mist)"/>
+  <rect width="1600" height="900" fill="url(#glow)"/>
+  <path d="M0 520 120 430 220 488 348 360 520 520 650 390 760 500 910 292 1088 514 1210 392 1324 482 1442 342 1600 512 1600 900 0 900Z" fill="#061522" opacity="0.72"/>
+  <path d="M0 604 150 506 306 585 456 430 635 606 786 490 895 580 1050 430 1190 610 1314 520 1434 612 1600 520 1600 900 0 900Z" fill="#03101b" opacity="0.8"/>
+  <path d="M0 675 160 616 312 674 470 575 650 706 825 596 982 686 1164 575 1320 682 1455 618 1600 684 1600 900 0 900Z" fill="#020b14" opacity="0.9"/>
+  <path d="M-80 445 C180 350 390 410 584 356 C790 300 946 346 1122 304 C1318 260 1456 330 1680 246" stroke="#d9edf2" stroke-width="96" stroke-opacity="0.13" fill="none" filter="url(#blur)"/>
+</svg>
