@@ -26,6 +26,15 @@ In the Explorer, open:
 power-pages/web-files/
 ```
 
+This folder now contains only files that must remain as Web Files:
+
+```text
+theme.css
+guidance-changes.csv
+mountain-bg.svg
+cfsb-logo.svg
+```
+
 For each file:
 
 1. Right-click the file.
@@ -41,6 +50,14 @@ If Download is unavailable:
 5. Paste and save.
 6. Upload that file to Power Pages.
 
+Open:
+
+```text
+power-pages/web-files/theme.css
+```
+
+Copy all content and paste it into the portal `theme.css` file. This one file contains the full visual theme.
+
 ## Copy page bodies
 
 Open:
@@ -49,13 +66,22 @@ Open:
 power-pages/pages/
 ```
 
-For each page file:
+Only copy these two page files:
+
+```text
+power-pages/pages/home.html
+power-pages/pages/contact.html
+```
+
+For each file:
 
 1. Open the file in `vscode.dev`.
 2. Copy all content.
 3. Open the matching Power Pages Web Page copy/content field.
 4. Paste the content.
 5. Save and publish.
+
+Do not create separate published pages for Guidance, Process Library, Documents, Ownership, or Meet the Team. Those sections are already inside `home.html` and should be reached through Home page anchors.
 
 ## Copy layout templates
 
@@ -67,6 +93,8 @@ power-pages/web-templates/layout-footer.html
 ```
 
 Copy/paste them into your Power Pages shared layout or master template.
+
+`layout-footer.html` contains inline JavaScript. This avoids the Power Pages `vscode.dev` issue where separate `.js` Web Files do not save or update reliably.
 
 ## What not to do in vscode.dev
 

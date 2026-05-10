@@ -24,13 +24,7 @@ as Power Pages Web Files.
 
 | Source file | Web File partial URL |
 | --- | --- |
-| `tokens.css` | `tokens.css` |
-| `components.css` | `components.css` |
-| `site.js` | `site.js` |
-| `site-search.js` | `site-search.js` |
-| `user-welcome.js` | `user-welcome.js` |
-| `guidance-calendar.js` | `guidance-calendar.js` |
-| `org-structure.js` | `org-structure.js` |
+| `theme.css` | `theme.css` |
 | `guidance-changes.csv` | `guidance-changes.csv` |
 | `mountain-bg.svg` | `mountain-bg.svg` |
 | `cfsb-logo.svg` | `cfsb-logo.svg` |
@@ -52,12 +46,7 @@ After saving the Web File record, attach the actual file in Notes / Timeline if 
 Open these directly in the browser:
 
 ```text
-https://your-site-url/tokens.css
-https://your-site-url/components.css
-https://your-site-url/site.js
-https://your-site-url/site-search.js
-https://your-site-url/guidance-calendar.js
-https://your-site-url/org-structure.js
+https://your-site-url/theme.css
 https://your-site-url/guidance-changes.csv
 ```
 
@@ -74,36 +63,26 @@ power-pages/web-templates/layout-footer.html
 
 If your Power Pages site has a master layout, paste the header content before the page body and footer content after the page body.
 
-The header expects these root Web File URLs:
+The header expects this root Web File URL:
 
 ```html
-<link rel="stylesheet" href="/tokens.css">
-<link rel="stylesheet" href="/components.css">
+<link rel="stylesheet" href="/theme.css">
 ```
 
-The footer expects these scripts:
+If the client Power Pages tenant already loads `theme.css` automatically, paste the full contents of `power-pages/web-files/theme.css` into that portal `theme.css` file and do not rely on separate custom CSS settings.
 
-```html
-<script src="/site.js"></script>
-<script src="/site-search.js"></script>
-<script src="/user-welcome.js"></script>
-<script src="/guidance-calendar.js"></script>
-<script src="/org-structure.js"></script>
-```
+The footer contains inline JavaScript for menu behavior, site search, user welcome text, guidance calendar behavior, and Org / POD search. Do not create separate JavaScript Web Files unless you intentionally split the scripts again.
 
 ## 5. Create the pages
 
-Create these Power Pages routes and paste the matching body HTML.
+Create only these Power Pages content pages and paste the matching body HTML.
 
 | Page | Partial URL | Source file |
 | --- | --- | --- |
 | Home | default home page `/` | `power-pages/pages/home.html` |
-| Guidance & Updates | `guidance` | `power-pages/pages/guidance.html` |
-| Process Library | `resources` | `power-pages/pages/resources.html` |
-| Documents | `document-library` | `power-pages/pages/document-library.html` |
-| Ownership | `org` | `power-pages/pages/org.html` |
-| Meet the Team | `meet-the-team` | `power-pages/pages/meet-the-team.html` |
 | Contact | `contact` | `power-pages/pages/contact.html` |
+
+Guidance & Updates, Process Library, Documents, Ownership, and Meet the Team are scroll sections inside Home. Do not create separate published pages for those sections.
 
 ## 6. Route check
 
@@ -111,11 +90,11 @@ The header links expect exactly:
 
 ```text
 /
-/guidance
-/resources
-/document-library
-/org
-/meet-the-team
+/#guidance
+/#resources
+/#documents
+/#org
+/#meet-team
 /contact
 ```
 
@@ -143,21 +122,15 @@ Cmd + Shift + R
 Test:
 
 - Home page loads with dark glass styling.
-- Header navigation works.
+- Header navigation scrolls within Home for Guidance, Process Library, Documents, Ownership, and Meet the Team.
 - Global search works.
 - Guidance calendar loads CSV rows.
-- Document Library cards render.
+- Document Library cards render on Home.
 - Org / POD search works separately.
-- Meet the Team page renders.
+- Meet the Team section renders on Home.
 - Contact page renders.
-- Browser console has no 404s.
+- Browser console has no missing CSS/CSV/SVG files.
 
-## 9. Do not deploy preview
+## 9. Clean deploy folder
 
-Do not deploy:
-
-```text
-preview/
-```
-
-That folder is only for local static preview.
+The deployable source is intentionally small. `power-pages/pages/` should contain only `home.html` and `contact.html`, because every section except Contact lives inside Home.

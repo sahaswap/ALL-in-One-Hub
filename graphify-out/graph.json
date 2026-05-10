@@ -4,372 +4,12 @@
   "graph": {},
   "nodes": [
     {
-      "label": "user-welcome.js",
-      "file_type": "code",
-      "source_file": "power-pages/web-files/user-welcome.js",
-      "source_location": "L1",
-      "id": "power_pages_web_files_user_welcome_js",
-      "community": 9,
-      "norm_label": "user-welcome.js"
-    },
-    {
-      "label": "org-structure.js",
-      "file_type": "code",
-      "source_file": "power-pages/web-files/org-structure.js",
-      "source_location": "L1",
-      "id": "power_pages_web_files_org_structure_js",
-      "community": 6,
-      "norm_label": "org-structure.js"
-    },
-    {
-      "label": "clearMatches()",
-      "file_type": "code",
-      "source_file": "power-pages/web-files/org-structure.js",
-      "source_location": "L12",
-      "id": "web_files_org_structure_clearmatches",
-      "community": 6,
-      "norm_label": "clearmatches()"
-    },
-    {
-      "label": "updateFeedback()",
-      "file_type": "code",
-      "source_file": "power-pages/web-files/org-structure.js",
-      "source_location": "L25",
-      "id": "web_files_org_structure_updatefeedback",
-      "community": 6,
-      "norm_label": "updatefeedback()"
-    },
-    {
-      "label": "getPodName()",
-      "file_type": "code",
-      "source_file": "power-pages/web-files/org-structure.js",
-      "source_location": "L31",
-      "id": "web_files_org_structure_getpodname",
-      "community": 6,
-      "norm_label": "getpodname()"
-    },
-    {
-      "label": "runSearch()",
-      "file_type": "code",
-      "source_file": "power-pages/web-files/org-structure.js",
-      "source_location": "L37",
-      "id": "web_files_org_structure_runsearch",
-      "community": 6,
-      "norm_label": "runsearch()"
-    },
-    {
-      "label": "guidance-calendar.js",
-      "file_type": "code",
-      "source_file": "power-pages/web-files/guidance-calendar.js",
-      "source_location": "L1",
-      "id": "power_pages_web_files_guidance_calendar_js",
-      "community": 3,
-      "norm_label": "guidance-calendar.js"
-    },
-    {
-      "label": "closeGuidanceModal()",
-      "file_type": "code",
-      "source_file": "power-pages/web-files/guidance-calendar.js",
-      "source_location": "L7",
-      "id": "web_files_guidance_calendar_closeguidancemodal",
-      "community": 3,
-      "norm_label": "closeguidancemodal()"
-    },
-    {
-      "label": "openGuidanceModal()",
-      "file_type": "code",
-      "source_file": "power-pages/web-files/guidance-calendar.js",
-      "source_location": "L16",
-      "id": "web_files_guidance_calendar_openguidancemodal",
-      "community": 3,
-      "norm_label": "openguidancemodal()"
-    },
-    {
-      "label": "parseCsv()",
-      "file_type": "code",
-      "source_file": "power-pages/web-files/guidance-calendar.js",
-      "source_location": "L64",
-      "id": "web_files_guidance_calendar_parsecsv",
-      "community": 3,
-      "norm_label": "parsecsv()"
-    },
-    {
-      "label": "parseLocalDate()",
-      "file_type": "code",
-      "source_file": "power-pages/web-files/guidance-calendar.js",
-      "source_location": "L118",
-      "id": "web_files_guidance_calendar_parselocaldate",
-      "community": 3,
-      "norm_label": "parselocaldate()"
-    },
-    {
-      "label": "formatDisplayDate()",
-      "file_type": "code",
-      "source_file": "power-pages/web-files/guidance-calendar.js",
-      "source_location": "L123",
-      "id": "web_files_guidance_calendar_formatdisplaydate",
-      "community": 3,
-      "norm_label": "formatdisplaydate()"
-    },
-    {
-      "label": "formatIsoDate()",
-      "file_type": "code",
-      "source_file": "power-pages/web-files/guidance-calendar.js",
-      "source_location": "L127",
-      "id": "web_files_guidance_calendar_formatisodate",
-      "community": 3,
-      "norm_label": "formatisodate()"
-    },
-    {
-      "label": "getWeekStart()",
-      "file_type": "code",
-      "source_file": "power-pages/web-files/guidance-calendar.js",
-      "source_location": "L135",
-      "id": "web_files_guidance_calendar_getweekstart",
-      "community": 3,
-      "norm_label": "getweekstart()"
-    },
-    {
-      "label": "uniqueValues()",
-      "file_type": "code",
-      "source_file": "power-pages/web-files/guidance-calendar.js",
-      "source_location": "L141",
-      "id": "web_files_guidance_calendar_uniquevalues",
-      "community": 3,
-      "norm_label": "uniquevalues()"
-    },
-    {
-      "label": "setOptions()",
-      "file_type": "code",
-      "source_file": "power-pages/web-files/guidance-calendar.js",
-      "source_location": "L145",
-      "id": "web_files_guidance_calendar_setoptions",
-      "community": 3,
-      "norm_label": "setoptions()"
-    },
-    {
-      "label": "getFilteredGuidance()",
-      "file_type": "code",
-      "source_file": "power-pages/web-files/guidance-calendar.js",
-      "source_location": "L156",
-      "id": "web_files_guidance_calendar_getfilteredguidance",
-      "community": 3,
-      "norm_label": "getfilteredguidance()"
-    },
-    {
-      "label": "createGuidanceItem()",
-      "file_type": "code",
-      "source_file": "power-pages/web-files/guidance-calendar.js",
-      "source_location": "L165",
-      "id": "web_files_guidance_calendar_createguidanceitem",
-      "community": 3,
-      "norm_label": "createguidanceitem()"
-    },
-    {
-      "label": "openGuidanceRecords()",
-      "file_type": "code",
-      "source_file": "power-pages/web-files/guidance-calendar.js",
-      "source_location": "L198",
-      "id": "web_files_guidance_calendar_openguidancerecords",
-      "community": 3,
-      "norm_label": "openguidancerecords()"
-    },
-    {
-      "label": "initGuidanceCalendar()",
-      "file_type": "code",
-      "source_file": "power-pages/web-files/guidance-calendar.js",
-      "source_location": "L214",
-      "id": "web_files_guidance_calendar_initguidancecalendar",
-      "community": 3,
-      "norm_label": "initguidancecalendar()"
-    },
-    {
-      "label": "site-search.js",
-      "file_type": "code",
-      "source_file": "power-pages/web-files/site-search.js",
-      "source_location": "L1",
-      "id": "power_pages_web_files_site_search_js",
-      "community": 2,
-      "norm_label": "site-search.js"
-    },
-    {
-      "label": "normalize()",
-      "file_type": "code",
-      "source_file": "power-pages/web-files/site-search.js",
-      "source_location": "L11",
-      "id": "web_files_site_search_normalize",
-      "community": 2,
-      "norm_label": "normalize()"
-    },
-    {
-      "label": "isVisible()",
-      "file_type": "code",
-      "source_file": "power-pages/web-files/site-search.js",
-      "source_location": "L15",
-      "id": "web_files_site_search_isvisible",
-      "community": 2,
-      "norm_label": "isvisible()"
-    },
-    {
-      "label": "cleanText()",
-      "file_type": "code",
-      "source_file": "power-pages/web-files/site-search.js",
-      "source_location": "L19",
-      "id": "web_files_site_search_cleantext",
-      "community": 2,
-      "norm_label": "cleantext()"
-    },
-    {
-      "label": "getTitle()",
-      "file_type": "code",
-      "source_file": "power-pages/web-files/site-search.js",
-      "source_location": "L23",
-      "id": "web_files_site_search_gettitle",
-      "community": 2,
-      "norm_label": "gettitle()"
-    },
-    {
-      "label": "getCategory()",
-      "file_type": "code",
-      "source_file": "power-pages/web-files/site-search.js",
-      "source_location": "L39",
-      "id": "web_files_site_search_getcategory",
-      "community": 2,
-      "norm_label": "getcategory()"
-    },
-    {
-      "label": "getUrl()",
-      "file_type": "code",
-      "source_file": "power-pages/web-files/site-search.js",
-      "source_location": "L58",
-      "id": "web_files_site_search_geturl",
-      "community": 2,
-      "norm_label": "geturl()"
-    },
-    {
-      "label": "getExcerpt()",
-      "file_type": "code",
-      "source_file": "power-pages/web-files/site-search.js",
-      "source_location": "L73",
-      "id": "web_files_site_search_getexcerpt",
-      "community": 2,
-      "norm_label": "getexcerpt()"
-    },
-    {
-      "label": "collectRecords()",
-      "file_type": "code",
-      "source_file": "power-pages/web-files/site-search.js",
-      "source_location": "L91",
-      "id": "web_files_site_search_collectrecords",
-      "community": 2,
-      "norm_label": "collectrecords()"
-    },
-    {
-      "label": "getPageUrls()",
-      "file_type": "code",
-      "source_file": "power-pages/web-files/site-search.js",
-      "source_location": "L114",
-      "id": "web_files_site_search_getpageurls",
-      "community": 2,
-      "norm_label": "getpageurls()"
-    },
-    {
-      "label": "fetchPageRecords()",
-      "file_type": "code",
-      "source_file": "power-pages/web-files/site-search.js",
-      "source_location": "L128",
-      "id": "web_files_site_search_fetchpagerecords",
-      "community": 2,
-      "norm_label": "fetchpagerecords()"
-    },
-    {
-      "label": "getRecords()",
-      "file_type": "code",
-      "source_file": "power-pages/web-files/site-search.js",
-      "source_location": "L148",
-      "id": "web_files_site_search_getrecords",
-      "community": 2,
-      "norm_label": "getrecords()"
-    },
-    {
-      "label": "scoreRecord()",
-      "file_type": "code",
-      "source_file": "power-pages/web-files/site-search.js",
-      "source_location": "L170",
-      "id": "web_files_site_search_scorerecord",
-      "community": 2,
-      "norm_label": "scorerecord()"
-    },
-    {
-      "label": "ensureResults()",
-      "file_type": "code",
-      "source_file": "power-pages/web-files/site-search.js",
-      "source_location": "L200",
-      "id": "web_files_site_search_ensureresults",
-      "community": 2,
-      "norm_label": "ensureresults()"
-    },
-    {
-      "label": "renderResults()",
-      "file_type": "code",
-      "source_file": "power-pages/web-files/site-search.js",
-      "source_location": "L224",
-      "id": "web_files_site_search_renderresults",
-      "community": 2,
-      "norm_label": "renderresults()"
-    },
-    {
-      "label": "runSearch()",
-      "file_type": "code",
-      "source_file": "power-pages/web-files/site-search.js",
-      "source_location": "L256",
-      "id": "web_files_site_search_runsearch",
-      "community": 2,
-      "norm_label": "runsearch()"
-    },
-    {
-      "label": "site.js",
-      "file_type": "code",
-      "source_file": "power-pages/web-files/site.js",
-      "source_location": "L1",
-      "id": "power_pages_web_files_site_js",
-      "community": 8,
-      "norm_label": "site.js"
-    },
-    {
-      "label": "updatePageActiveLink()",
-      "file_type": "code",
-      "source_file": "power-pages/web-files/site.js",
-      "source_location": "L33",
-      "id": "web_files_site_updatepageactivelink",
-      "community": 8,
-      "norm_label": "updatepageactivelink()"
-    },
-    {
-      "label": "setActiveLink()",
-      "file_type": "code",
-      "source_file": "power-pages/web-files/site.js",
-      "source_location": "L45",
-      "id": "web_files_site_setactivelink",
-      "community": 8,
-      "norm_label": "setactivelink()"
-    },
-    {
-      "label": "updateActiveLink()",
-      "file_type": "code",
-      "source_file": "power-pages/web-files/site.js",
-      "source_location": "L57",
-      "id": "web_files_site_updateactivelink",
-      "community": 8,
-      "norm_label": "updateactivelink()"
-    },
-    {
       "label": "README.md",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L1",
       "id": "readme_md",
-      "community": 1,
+      "community": 3,
       "norm_label": "readme.md"
     },
     {
@@ -378,7 +18,7 @@
       "source_file": "README.md",
       "source_location": "L1",
       "id": "all_in_one_hub_readme_all_in_one_hub",
-      "community": 1,
+      "community": 3,
       "norm_label": "all in one hub"
     },
     {
@@ -387,7 +27,7 @@
       "source_file": "README.md",
       "source_location": "L7",
       "id": "all_in_one_hub_readme_what_this_site_is",
-      "community": 1,
+      "community": 3,
       "norm_label": "what this site is"
     },
     {
@@ -396,7 +36,7 @@
       "source_file": "README.md",
       "source_location": "L20",
       "id": "all_in_one_hub_readme_visual_direction",
-      "community": 1,
+      "community": 3,
       "norm_label": "visual direction"
     },
     {
@@ -405,7 +45,7 @@
       "source_file": "README.md",
       "source_location": "L31",
       "id": "all_in_one_hub_readme_repository_structure",
-      "community": 1,
+      "community": 3,
       "norm_label": "repository structure"
     },
     {
@@ -414,160 +54,133 @@
       "source_file": "README.md",
       "source_location": "L33",
       "id": "all_in_one_hub_readme_codeblock_1",
-      "community": 1,
+      "community": 3,
       "norm_label": "code:text (all-in-one-hub/)"
     },
     {
       "label": "Important files",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L43",
+      "source_location": "L42",
       "id": "all_in_one_hub_readme_important_files",
-      "community": 1,
+      "community": 3,
       "norm_label": "important files"
     },
     {
-      "label": "code:text (power-pages/web-files/tokens.css)",
+      "label": "code:text (power-pages/web-files/theme.css)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L45",
+      "source_location": "L44",
       "id": "all_in_one_hub_readme_codeblock_2",
-      "community": 1,
-      "norm_label": "code:text (power-pages/web-files/tokens.css)"
+      "community": 3,
+      "norm_label": "code:text (power-pages/web-files/theme.css)"
     },
     {
       "label": "Power Pages deployment summary",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L58",
+      "source_location": "L51",
       "id": "all_in_one_hub_readme_power_pages_deployment_summary",
-      "community": 1,
+      "community": 3,
       "norm_label": "power pages deployment summary"
     },
     {
       "label": "code:text (power-pages/)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L62",
+      "source_location": "L55",
       "id": "all_in_one_hub_readme_codeblock_3",
-      "community": 1,
+      "community": 3,
       "norm_label": "code:text (power-pages/)"
-    },
-    {
-      "label": "code:text (preview/)",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L68",
-      "id": "all_in_one_hub_readme_codeblock_4",
-      "community": 1,
-      "norm_label": "code:text (preview/)"
     },
     {
       "label": "code:text (docs/POWER-PAGES-DEPLOYMENT.md)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L82",
-      "id": "all_in_one_hub_readme_codeblock_5",
-      "community": 1,
+      "source_location": "L71",
+      "id": "all_in_one_hub_readme_codeblock_4",
+      "community": 3,
       "norm_label": "code:text (docs/power-pages-deployment.md)"
     },
     {
-      "label": "Local preview",
+      "label": "vscode.dev workflow",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L86",
-      "id": "all_in_one_hub_readme_local_preview",
-      "community": 1,
-      "norm_label": "local preview"
-    },
-    {
-      "label": "code:bash (python3 -m http.server 3000)",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L90",
-      "id": "all_in_one_hub_readme_codeblock_6",
-      "community": 1,
-      "norm_label": "code:bash (python3 -m http.server 3000)"
-    },
-    {
-      "label": "code:text (http://localhost:3000/preview/)",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L96",
-      "id": "all_in_one_hub_readme_codeblock_7",
-      "community": 1,
-      "norm_label": "code:text (http://localhost:3000/preview/)"
+      "source_location": "L75",
+      "id": "all_in_one_hub_readme_vscode_dev_workflow",
+      "community": 3,
+      "norm_label": "vscode.dev workflow"
     },
     {
       "label": "code:text (docs/VSCODE-DEV-WORKFLOW.md)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L102",
-      "id": "all_in_one_hub_readme_codeblock_8",
-      "community": 1,
+      "source_location": "L79",
+      "id": "all_in_one_hub_readme_codeblock_5",
+      "community": 3,
       "norm_label": "code:text (docs/vscode-dev-workflow.md)"
     },
     {
       "label": "Guidance data",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L106",
+      "source_location": "L83",
       "id": "all_in_one_hub_readme_guidance_data",
-      "community": 7,
+      "community": 6,
       "norm_label": "guidance data"
     },
     {
       "label": "code:text (/guidance-changes.csv)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L110",
-      "id": "all_in_one_hub_readme_codeblock_9",
-      "community": 7,
+      "source_location": "L87",
+      "id": "all_in_one_hub_readme_codeblock_6",
+      "community": 6,
       "norm_label": "code:text (/guidance-changes.csv)"
     },
     {
       "label": "code:text (SharePoint Excel -> Power Automate -> guidance-changes.csv -)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L116",
-      "id": "all_in_one_hub_readme_codeblock_10",
-      "community": 7,
+      "source_location": "L93",
+      "id": "all_in_one_hub_readme_codeblock_7",
+      "community": 6,
       "norm_label": "code:text (sharepoint excel -> power automate -> guidance-changes.csv -)"
     },
     {
       "label": "code:text (SharePoint List or Excel -> Power Automate -> Dataverse -> P)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L122",
-      "id": "all_in_one_hub_readme_codeblock_11",
-      "community": 7,
+      "source_location": "L99",
+      "id": "all_in_one_hub_readme_codeblock_8",
+      "community": 6,
       "norm_label": "code:text (sharepoint list or excel -> power automate -> dataverse -> p)"
     },
     {
       "label": "code:text (docs/GUIDANCE-DATA-OPTIONS.md)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L128",
-      "id": "all_in_one_hub_readme_codeblock_12",
-      "community": 7,
+      "source_location": "L105",
+      "id": "all_in_one_hub_readme_codeblock_9",
+      "community": 6,
       "norm_label": "code:text (docs/guidance-data-options.md)"
     },
     {
       "label": "Search behavior",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L132",
+      "source_location": "L109",
       "id": "all_in_one_hub_readme_search_behavior",
-      "community": 1,
+      "community": 3,
       "norm_label": "search behavior"
     },
     {
       "label": "Client deployment checklist",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L138",
+      "source_location": "L115",
       "id": "all_in_one_hub_readme_client_deployment_checklist",
-      "community": 1,
+      "community": 3,
       "norm_label": "client deployment checklist"
     },
     {
@@ -576,7 +189,7 @@
       "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
       "source_location": "L1",
       "id": "docs_vscode_dev_workflow_md",
-      "community": 5,
+      "community": 1,
       "norm_label": "vscode-dev-workflow.md"
     },
     {
@@ -585,7 +198,7 @@
       "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
       "source_location": "L1",
       "id": "docs_vscode_dev_workflow_vscode_dev_workflow",
-      "community": 5,
+      "community": 1,
       "norm_label": "vscode.dev workflow"
     },
     {
@@ -594,7 +207,7 @@
       "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
       "source_location": "L5",
       "id": "docs_vscode_dev_workflow_codeblock_1",
-      "community": 5,
+      "community": 1,
       "norm_label": "code:text (https://vscode.dev/github/<owner>/<repo>)"
     },
     {
@@ -603,7 +216,7 @@
       "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
       "source_location": "L11",
       "id": "docs_vscode_dev_workflow_open_the_repo",
-      "community": 5,
+      "community": 1,
       "norm_label": "open the repo"
     },
     {
@@ -612,7 +225,7 @@
       "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
       "source_location": "L15",
       "id": "docs_vscode_dev_workflow_codeblock_2",
-      "community": 5,
+      "community": 1,
       "norm_label": "code:text (https://vscode.dev/github/sahaswap/all-in-one-hub)"
     },
     {
@@ -621,7 +234,7 @@
       "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
       "source_location": "L21",
       "id": "docs_vscode_dev_workflow_download_or_copy_web_files",
-      "community": 5,
+      "community": 1,
       "norm_label": "download or copy web files"
     },
     {
@@ -630,61 +243,88 @@
       "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
       "source_location": "L25",
       "id": "docs_vscode_dev_workflow_codeblock_3",
-      "community": 5,
+      "community": 1,
       "norm_label": "code:text (power-pages/web-files/)"
+    },
+    {
+      "label": "code:text (theme.css)",
+      "file_type": "document",
+      "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
+      "source_location": "L31",
+      "id": "docs_vscode_dev_workflow_codeblock_4",
+      "community": 1,
+      "norm_label": "code:text (theme.css)"
+    },
+    {
+      "label": "code:text (power-pages/web-files/theme.css)",
+      "file_type": "document",
+      "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
+      "source_location": "L55",
+      "id": "docs_vscode_dev_workflow_codeblock_5",
+      "community": 1,
+      "norm_label": "code:text (power-pages/web-files/theme.css)"
     },
     {
       "label": "Copy page bodies",
       "file_type": "document",
       "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
-      "source_location": "L44",
+      "source_location": "L61",
       "id": "docs_vscode_dev_workflow_copy_page_bodies",
-      "community": 5,
+      "community": 1,
       "norm_label": "copy page bodies"
     },
     {
       "label": "code:text (power-pages/pages/)",
       "file_type": "document",
       "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
-      "source_location": "L48",
-      "id": "docs_vscode_dev_workflow_codeblock_4",
-      "community": 5,
+      "source_location": "L65",
+      "id": "docs_vscode_dev_workflow_codeblock_6",
+      "community": 1,
       "norm_label": "code:text (power-pages/pages/)"
+    },
+    {
+      "label": "code:text (power-pages/pages/home.html)",
+      "file_type": "document",
+      "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
+      "source_location": "L71",
+      "id": "docs_vscode_dev_workflow_codeblock_7",
+      "community": 1,
+      "norm_label": "code:text (power-pages/pages/home.html)"
     },
     {
       "label": "Copy layout templates",
       "file_type": "document",
       "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
-      "source_location": "L60",
+      "source_location": "L86",
       "id": "docs_vscode_dev_workflow_copy_layout_templates",
-      "community": 5,
+      "community": 1,
       "norm_label": "copy layout templates"
     },
     {
       "label": "code:text (power-pages/web-templates/layout-header.html)",
       "file_type": "document",
       "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
-      "source_location": "L64",
-      "id": "docs_vscode_dev_workflow_codeblock_5",
-      "community": 5,
+      "source_location": "L90",
+      "id": "docs_vscode_dev_workflow_codeblock_8",
+      "community": 1,
       "norm_label": "code:text (power-pages/web-templates/layout-header.html)"
     },
     {
       "label": "What not to do in vscode.dev",
       "file_type": "document",
       "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
-      "source_location": "L71",
+      "source_location": "L99",
       "id": "docs_vscode_dev_workflow_what_not_to_do_in_vscode_dev",
-      "community": 5,
+      "community": 1,
       "norm_label": "what not to do in vscode.dev"
     },
     {
       "label": "code:bash (git clone)",
       "file_type": "document",
       "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
-      "source_location": "L75",
-      "id": "docs_vscode_dev_workflow_codeblock_6",
-      "community": 5,
+      "source_location": "L103",
+      "id": "docs_vscode_dev_workflow_codeblock_9",
+      "community": 1,
       "norm_label": "code:bash (git clone)"
     },
     {
@@ -736,25 +376,25 @@
       "label": "3. Validate Web Files",
       "file_type": "document",
       "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
-      "source_location": "L50",
+      "source_location": "L44",
       "id": "docs_power_pages_deployment_3_validate_web_files",
       "community": 0,
       "norm_label": "3. validate web files"
     },
     {
-      "label": "code:text (https://your-site-url/tokens.css)",
+      "label": "code:text (https://your-site-url/theme.css)",
       "file_type": "document",
       "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
-      "source_location": "L54",
+      "source_location": "L48",
       "id": "docs_power_pages_deployment_codeblock_2",
       "community": 0,
-      "norm_label": "code:text (https://your-site-url/tokens.css)"
+      "norm_label": "code:text (https://your-site-url/theme.css)"
     },
     {
       "label": "4. Add shared layout templates",
       "file_type": "document",
       "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
-      "source_location": "L66",
+      "source_location": "L55",
       "id": "docs_power_pages_deployment_4_add_shared_layout_templates",
       "community": 0,
       "norm_label": "4. add shared layout templates"
@@ -763,34 +403,25 @@
       "label": "code:text (power-pages/web-templates/layout-header.html)",
       "file_type": "document",
       "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
-      "source_location": "L70",
+      "source_location": "L59",
       "id": "docs_power_pages_deployment_codeblock_3",
       "community": 0,
       "norm_label": "code:text (power-pages/web-templates/layout-header.html)"
     },
     {
-      "label": "code:html (<link rel=\"stylesheet\" href=\"/tokens.css\">)",
+      "label": "code:html (<link rel=\"stylesheet\" href=\"/theme.css\">)",
       "file_type": "document",
       "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
-      "source_location": "L79",
+      "source_location": "L68",
       "id": "docs_power_pages_deployment_codeblock_4",
       "community": 0,
-      "norm_label": "code:html (<link rel=\"stylesheet\" href=\"/tokens.css\">)"
-    },
-    {
-      "label": "code:html (<script src=\"/site.js\"></script>)",
-      "file_type": "document",
-      "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
-      "source_location": "L86",
-      "id": "docs_power_pages_deployment_codeblock_5",
-      "community": 0,
-      "norm_label": "code:html (<script src=\"/site.js\"></script>)"
+      "norm_label": "code:html (<link rel=\"stylesheet\" href=\"/theme.css\">)"
     },
     {
       "label": "5. Create the pages",
       "file_type": "document",
       "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
-      "source_location": "L94",
+      "source_location": "L76",
       "id": "docs_power_pages_deployment_5_create_the_pages",
       "community": 0,
       "norm_label": "5. create the pages"
@@ -799,7 +430,7 @@
       "label": "6. Route check",
       "file_type": "document",
       "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
-      "source_location": "L108",
+      "source_location": "L87",
       "id": "docs_power_pages_deployment_6_route_check",
       "community": 0,
       "norm_label": "6. route check"
@@ -808,8 +439,8 @@
       "label": "code:text (/)",
       "file_type": "document",
       "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
-      "source_location": "L112",
-      "id": "docs_power_pages_deployment_codeblock_6",
+      "source_location": "L91",
+      "id": "docs_power_pages_deployment_codeblock_5",
       "community": 0,
       "norm_label": "code:text (/)"
     },
@@ -817,7 +448,7 @@
       "label": "7. Clear cache",
       "file_type": "document",
       "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
-      "source_location": "L122",
+      "source_location": "L101",
       "id": "docs_power_pages_deployment_7_clear_cache",
       "community": 0,
       "norm_label": "7. clear cache"
@@ -826,8 +457,8 @@
       "label": "code:text (Ctrl + F5)",
       "file_type": "document",
       "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
-      "source_location": "L131",
-      "id": "docs_power_pages_deployment_codeblock_7",
+      "source_location": "L110",
+      "id": "docs_power_pages_deployment_codeblock_6",
       "community": 0,
       "norm_label": "code:text (ctrl + f5)"
     },
@@ -835,8 +466,8 @@
       "label": "code:text (Cmd + Shift + R)",
       "file_type": "document",
       "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
-      "source_location": "L137",
-      "id": "docs_power_pages_deployment_codeblock_8",
+      "source_location": "L116",
+      "id": "docs_power_pages_deployment_codeblock_7",
       "community": 0,
       "norm_label": "code:text (cmd + shift + r)"
     },
@@ -844,28 +475,19 @@
       "label": "8. Functional test",
       "file_type": "document",
       "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
-      "source_location": "L141",
+      "source_location": "L120",
       "id": "docs_power_pages_deployment_8_functional_test",
       "community": 0,
       "norm_label": "8. functional test"
     },
     {
-      "label": "9. Do not deploy preview",
+      "label": "9. Clean deploy folder",
       "file_type": "document",
       "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
-      "source_location": "L155",
-      "id": "docs_power_pages_deployment_9_do_not_deploy_preview",
+      "source_location": "L134",
+      "id": "docs_power_pages_deployment_9_clean_deploy_folder",
       "community": 0,
-      "norm_label": "9. do not deploy preview"
-    },
-    {
-      "label": "code:text (preview/)",
-      "file_type": "document",
-      "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
-      "source_location": "L159",
-      "id": "docs_power_pages_deployment_codeblock_9",
-      "community": 0,
-      "norm_label": "code:text (preview/)"
+      "norm_label": "9. clean deploy folder"
     },
     {
       "label": "GUIDANCE-DATA-OPTIONS.md",
@@ -992,18 +614,1261 @@
       "id": "docs_guidance_data_options_why_not_direct_xlsx_parsing_in_browser",
       "community": 4,
       "norm_label": "why not direct xlsx parsing in browser"
+    },
+    {
+      "label": "user-welcome.js",
+      "file_type": "code",
+      "source_file": "power-pages/web-files/user-welcome.js",
+      "source_location": "L1",
+      "community": 9,
+      "norm_label": "user-welcome.js",
+      "id": "power_pages_web_files_user_welcome_js"
+    },
+    {
+      "label": "org-structure.js",
+      "file_type": "code",
+      "source_file": "power-pages/web-files/org-structure.js",
+      "source_location": "L1",
+      "community": 7,
+      "norm_label": "org-structure.js",
+      "id": "power_pages_web_files_org_structure_js"
+    },
+    {
+      "label": "clearMatches()",
+      "file_type": "code",
+      "source_file": "power-pages/web-files/org-structure.js",
+      "source_location": "L12",
+      "community": 7,
+      "norm_label": "clearmatches()",
+      "id": "web_files_org_structure_clearmatches"
+    },
+    {
+      "label": "updateFeedback()",
+      "file_type": "code",
+      "source_file": "power-pages/web-files/org-structure.js",
+      "source_location": "L25",
+      "community": 7,
+      "norm_label": "updatefeedback()",
+      "id": "web_files_org_structure_updatefeedback"
+    },
+    {
+      "label": "getPodName()",
+      "file_type": "code",
+      "source_file": "power-pages/web-files/org-structure.js",
+      "source_location": "L31",
+      "community": 7,
+      "norm_label": "getpodname()",
+      "id": "web_files_org_structure_getpodname"
+    },
+    {
+      "label": "runSearch()",
+      "file_type": "code",
+      "source_file": "power-pages/web-files/org-structure.js",
+      "source_location": "L37",
+      "community": 7,
+      "norm_label": "runsearch()",
+      "id": "web_files_org_structure_runsearch"
+    },
+    {
+      "label": "guidance-calendar.js",
+      "file_type": "code",
+      "source_file": "power-pages/web-files/guidance-calendar.js",
+      "source_location": "L1",
+      "community": 5,
+      "norm_label": "guidance-calendar.js",
+      "id": "power_pages_web_files_guidance_calendar_js"
+    },
+    {
+      "label": "closeGuidanceModal()",
+      "file_type": "code",
+      "source_file": "power-pages/web-files/guidance-calendar.js",
+      "source_location": "L7",
+      "community": 5,
+      "norm_label": "closeguidancemodal()",
+      "id": "web_files_guidance_calendar_closeguidancemodal"
+    },
+    {
+      "label": "openGuidanceModal()",
+      "file_type": "code",
+      "source_file": "power-pages/web-files/guidance-calendar.js",
+      "source_location": "L16",
+      "community": 5,
+      "norm_label": "openguidancemodal()",
+      "id": "web_files_guidance_calendar_openguidancemodal"
+    },
+    {
+      "label": "parseCsv()",
+      "file_type": "code",
+      "source_file": "power-pages/web-files/guidance-calendar.js",
+      "source_location": "L64",
+      "community": 5,
+      "norm_label": "parsecsv()",
+      "id": "web_files_guidance_calendar_parsecsv"
+    },
+    {
+      "label": "parseLocalDate()",
+      "file_type": "code",
+      "source_file": "power-pages/web-files/guidance-calendar.js",
+      "source_location": "L118",
+      "community": 5,
+      "norm_label": "parselocaldate()",
+      "id": "web_files_guidance_calendar_parselocaldate"
+    },
+    {
+      "label": "formatDisplayDate()",
+      "file_type": "code",
+      "source_file": "power-pages/web-files/guidance-calendar.js",
+      "source_location": "L123",
+      "community": 5,
+      "norm_label": "formatdisplaydate()",
+      "id": "web_files_guidance_calendar_formatdisplaydate"
+    },
+    {
+      "label": "formatIsoDate()",
+      "file_type": "code",
+      "source_file": "power-pages/web-files/guidance-calendar.js",
+      "source_location": "L127",
+      "community": 5,
+      "norm_label": "formatisodate()",
+      "id": "web_files_guidance_calendar_formatisodate"
+    },
+    {
+      "label": "getWeekStart()",
+      "file_type": "code",
+      "source_file": "power-pages/web-files/guidance-calendar.js",
+      "source_location": "L135",
+      "community": 5,
+      "norm_label": "getweekstart()",
+      "id": "web_files_guidance_calendar_getweekstart"
+    },
+    {
+      "label": "uniqueValues()",
+      "file_type": "code",
+      "source_file": "power-pages/web-files/guidance-calendar.js",
+      "source_location": "L141",
+      "community": 5,
+      "norm_label": "uniquevalues()",
+      "id": "web_files_guidance_calendar_uniquevalues"
+    },
+    {
+      "label": "setOptions()",
+      "file_type": "code",
+      "source_file": "power-pages/web-files/guidance-calendar.js",
+      "source_location": "L145",
+      "community": 5,
+      "norm_label": "setoptions()",
+      "id": "web_files_guidance_calendar_setoptions"
+    },
+    {
+      "label": "getFilteredGuidance()",
+      "file_type": "code",
+      "source_file": "power-pages/web-files/guidance-calendar.js",
+      "source_location": "L156",
+      "community": 5,
+      "norm_label": "getfilteredguidance()",
+      "id": "web_files_guidance_calendar_getfilteredguidance"
+    },
+    {
+      "label": "createGuidanceItem()",
+      "file_type": "code",
+      "source_file": "power-pages/web-files/guidance-calendar.js",
+      "source_location": "L165",
+      "community": 5,
+      "norm_label": "createguidanceitem()",
+      "id": "web_files_guidance_calendar_createguidanceitem"
+    },
+    {
+      "label": "openGuidanceRecords()",
+      "file_type": "code",
+      "source_file": "power-pages/web-files/guidance-calendar.js",
+      "source_location": "L198",
+      "community": 5,
+      "norm_label": "openguidancerecords()",
+      "id": "web_files_guidance_calendar_openguidancerecords"
+    },
+    {
+      "label": "initGuidanceCalendar()",
+      "file_type": "code",
+      "source_file": "power-pages/web-files/guidance-calendar.js",
+      "source_location": "L214",
+      "community": 5,
+      "norm_label": "initguidancecalendar()",
+      "id": "web_files_guidance_calendar_initguidancecalendar"
+    },
+    {
+      "label": "site-search.js",
+      "file_type": "code",
+      "source_file": "power-pages/web-files/site-search.js",
+      "source_location": "L1",
+      "community": 2,
+      "norm_label": "site-search.js",
+      "id": "power_pages_web_files_site_search_js"
+    },
+    {
+      "label": "normalize()",
+      "file_type": "code",
+      "source_file": "power-pages/web-files/site-search.js",
+      "source_location": "L11",
+      "community": 2,
+      "norm_label": "normalize()",
+      "id": "web_files_site_search_normalize"
+    },
+    {
+      "label": "isVisible()",
+      "file_type": "code",
+      "source_file": "power-pages/web-files/site-search.js",
+      "source_location": "L15",
+      "community": 2,
+      "norm_label": "isvisible()",
+      "id": "web_files_site_search_isvisible"
+    },
+    {
+      "label": "cleanText()",
+      "file_type": "code",
+      "source_file": "power-pages/web-files/site-search.js",
+      "source_location": "L19",
+      "community": 2,
+      "norm_label": "cleantext()",
+      "id": "web_files_site_search_cleantext"
+    },
+    {
+      "label": "getTitle()",
+      "file_type": "code",
+      "source_file": "power-pages/web-files/site-search.js",
+      "source_location": "L23",
+      "community": 2,
+      "norm_label": "gettitle()",
+      "id": "web_files_site_search_gettitle"
+    },
+    {
+      "label": "getCategory()",
+      "file_type": "code",
+      "source_file": "power-pages/web-files/site-search.js",
+      "source_location": "L39",
+      "community": 2,
+      "norm_label": "getcategory()",
+      "id": "web_files_site_search_getcategory"
+    },
+    {
+      "label": "getUrl()",
+      "file_type": "code",
+      "source_file": "power-pages/web-files/site-search.js",
+      "source_location": "L58",
+      "community": 2,
+      "norm_label": "geturl()",
+      "id": "web_files_site_search_geturl"
+    },
+    {
+      "label": "getExcerpt()",
+      "file_type": "code",
+      "source_file": "power-pages/web-files/site-search.js",
+      "source_location": "L73",
+      "community": 2,
+      "norm_label": "getexcerpt()",
+      "id": "web_files_site_search_getexcerpt"
+    },
+    {
+      "label": "collectRecords()",
+      "file_type": "code",
+      "source_file": "power-pages/web-files/site-search.js",
+      "source_location": "L91",
+      "community": 2,
+      "norm_label": "collectrecords()",
+      "id": "web_files_site_search_collectrecords"
+    },
+    {
+      "label": "getPageUrls()",
+      "file_type": "code",
+      "source_file": "power-pages/web-files/site-search.js",
+      "source_location": "L114",
+      "community": 2,
+      "norm_label": "getpageurls()",
+      "id": "web_files_site_search_getpageurls"
+    },
+    {
+      "label": "fetchPageRecords()",
+      "file_type": "code",
+      "source_file": "power-pages/web-files/site-search.js",
+      "source_location": "L128",
+      "community": 2,
+      "norm_label": "fetchpagerecords()",
+      "id": "web_files_site_search_fetchpagerecords"
+    },
+    {
+      "label": "getRecords()",
+      "file_type": "code",
+      "source_file": "power-pages/web-files/site-search.js",
+      "source_location": "L148",
+      "community": 2,
+      "norm_label": "getrecords()",
+      "id": "web_files_site_search_getrecords"
+    },
+    {
+      "label": "scoreRecord()",
+      "file_type": "code",
+      "source_file": "power-pages/web-files/site-search.js",
+      "source_location": "L170",
+      "community": 2,
+      "norm_label": "scorerecord()",
+      "id": "web_files_site_search_scorerecord"
+    },
+    {
+      "label": "ensureResults()",
+      "file_type": "code",
+      "source_file": "power-pages/web-files/site-search.js",
+      "source_location": "L200",
+      "community": 2,
+      "norm_label": "ensureresults()",
+      "id": "web_files_site_search_ensureresults"
+    },
+    {
+      "label": "renderResults()",
+      "file_type": "code",
+      "source_file": "power-pages/web-files/site-search.js",
+      "source_location": "L224",
+      "community": 2,
+      "norm_label": "renderresults()",
+      "id": "web_files_site_search_renderresults"
+    },
+    {
+      "label": "runSearch()",
+      "file_type": "code",
+      "source_file": "power-pages/web-files/site-search.js",
+      "source_location": "L256",
+      "community": 2,
+      "norm_label": "runsearch()",
+      "id": "web_files_site_search_runsearch"
+    },
+    {
+      "label": "site.js",
+      "file_type": "code",
+      "source_file": "power-pages/web-files/site.js",
+      "source_location": "L1",
+      "community": 8,
+      "norm_label": "site.js",
+      "id": "power_pages_web_files_site_js"
+    },
+    {
+      "label": "updatePageActiveLink()",
+      "file_type": "code",
+      "source_file": "power-pages/web-files/site.js",
+      "source_location": "L33",
+      "community": 8,
+      "norm_label": "updatepageactivelink()",
+      "id": "web_files_site_updatepageactivelink"
+    },
+    {
+      "label": "setActiveLink()",
+      "file_type": "code",
+      "source_file": "power-pages/web-files/site.js",
+      "source_location": "L45",
+      "community": 8,
+      "norm_label": "setactivelink()",
+      "id": "web_files_site_setactivelink"
+    },
+    {
+      "label": "updateActiveLink()",
+      "file_type": "code",
+      "source_file": "power-pages/web-files/site.js",
+      "source_location": "L57",
+      "community": 8,
+      "norm_label": "updateactivelink()",
+      "id": "web_files_site_updateactivelink"
+    },
+    {
+      "label": "code:text (Cmd + Shift + R)",
+      "file_type": "document",
+      "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
+      "source_location": "L133",
+      "community": 0,
+      "norm_label": "code:text (cmd + shift + r)",
+      "id": "docs_power_pages_deployment_codeblock_8"
+    },
+    {
+      "label": "Local preview",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L86",
+      "community": 6,
+      "norm_label": "local preview",
+      "id": "all_in_one_hub_readme_local_preview"
+    },
+    {
+      "label": "code:text (SharePoint Excel -> Power Automate -> guidance-changes.csv -)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L116",
+      "community": 6,
+      "norm_label": "code:text (sharepoint excel -> power automate -> guidance-changes.csv -)",
+      "id": "all_in_one_hub_readme_codeblock_10"
+    },
+    {
+      "label": "code:text (SharePoint List or Excel -> Power Automate -> Dataverse -> P)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L122",
+      "community": 6,
+      "norm_label": "code:text (sharepoint list or excel -> power automate -> dataverse -> p)",
+      "id": "all_in_one_hub_readme_codeblock_11"
+    },
+    {
+      "label": "code:text (docs/GUIDANCE-DATA-OPTIONS.md)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L128",
+      "community": 6,
+      "norm_label": "code:text (docs/guidance-data-options.md)",
+      "id": "all_in_one_hub_readme_codeblock_12"
+    },
+    {
+      "label": "9. Do not deploy preview",
+      "file_type": "document",
+      "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
+      "source_location": "L155",
+      "community": 0,
+      "norm_label": "9. do not deploy preview",
+      "id": "docs_power_pages_deployment_9_do_not_deploy_preview"
+    },
+    {
+      "label": "code:text (preview/)",
+      "file_type": "document",
+      "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
+      "source_location": "L159",
+      "community": 0,
+      "norm_label": "code:text (preview/)",
+      "id": "docs_power_pages_deployment_codeblock_9"
     }
   ],
   "links": [
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_md",
+      "target": "all_in_one_hub_readme_all_in_one_hub"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "all_in_one_hub_readme_all_in_one_hub",
+      "target": "all_in_one_hub_readme_what_this_site_is"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "all_in_one_hub_readme_all_in_one_hub",
+      "target": "all_in_one_hub_readme_visual_direction"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "all_in_one_hub_readme_all_in_one_hub",
+      "target": "all_in_one_hub_readme_repository_structure"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L43",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "all_in_one_hub_readme_all_in_one_hub",
+      "target": "all_in_one_hub_readme_important_files"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L58",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "all_in_one_hub_readme_all_in_one_hub",
+      "target": "all_in_one_hub_readme_power_pages_deployment_summary"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L80",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "all_in_one_hub_readme_all_in_one_hub",
+      "target": "all_in_one_hub_readme_vscode_dev_workflow"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L106",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "all_in_one_hub_readme_all_in_one_hub",
+      "target": "all_in_one_hub_readme_guidance_data"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L132",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "all_in_one_hub_readme_all_in_one_hub",
+      "target": "all_in_one_hub_readme_search_behavior"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L138",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "all_in_one_hub_readme_all_in_one_hub",
+      "target": "all_in_one_hub_readme_client_deployment_checklist"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L86",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "all_in_one_hub_readme_all_in_one_hub",
+      "target": "all_in_one_hub_readme_local_preview"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "all_in_one_hub_readme_repository_structure",
+      "target": "all_in_one_hub_readme_codeblock_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L45",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "all_in_one_hub_readme_important_files",
+      "target": "all_in_one_hub_readme_codeblock_2"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L62",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "all_in_one_hub_readme_power_pages_deployment_summary",
+      "target": "all_in_one_hub_readme_codeblock_3"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L68",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "all_in_one_hub_readme_power_pages_deployment_summary",
+      "target": "all_in_one_hub_readme_codeblock_4"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L82",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "all_in_one_hub_readme_power_pages_deployment_summary",
+      "target": "all_in_one_hub_readme_codeblock_5"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L84",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "all_in_one_hub_readme_vscode_dev_workflow",
+      "target": "all_in_one_hub_readme_codeblock_5"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L92",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "all_in_one_hub_readme_guidance_data",
+      "target": "all_in_one_hub_readme_codeblock_6"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L98",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "all_in_one_hub_readme_guidance_data",
+      "target": "all_in_one_hub_readme_codeblock_7"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L104",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "all_in_one_hub_readme_guidance_data",
+      "target": "all_in_one_hub_readme_codeblock_8"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L110",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "all_in_one_hub_readme_guidance_data",
+      "target": "all_in_one_hub_readme_codeblock_9"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L116",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "all_in_one_hub_readme_guidance_data",
+      "target": "all_in_one_hub_readme_codeblock_10"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L122",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "all_in_one_hub_readme_guidance_data",
+      "target": "all_in_one_hub_readme_codeblock_11"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L128",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "all_in_one_hub_readme_guidance_data",
+      "target": "all_in_one_hub_readme_codeblock_12"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L90",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "all_in_one_hub_readme_local_preview",
+      "target": "all_in_one_hub_readme_codeblock_6"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L96",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "all_in_one_hub_readme_local_preview",
+      "target": "all_in_one_hub_readme_codeblock_7"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L102",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "all_in_one_hub_readme_local_preview",
+      "target": "all_in_one_hub_readme_codeblock_8"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_vscode_dev_workflow_md",
+      "target": "docs_vscode_dev_workflow_vscode_dev_workflow"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_vscode_dev_workflow_vscode_dev_workflow",
+      "target": "docs_vscode_dev_workflow_codeblock_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_vscode_dev_workflow_vscode_dev_workflow",
+      "target": "docs_vscode_dev_workflow_open_the_repo"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_vscode_dev_workflow_vscode_dev_workflow",
+      "target": "docs_vscode_dev_workflow_download_or_copy_web_files"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_vscode_dev_workflow_vscode_dev_workflow",
+      "target": "docs_vscode_dev_workflow_copy_page_bodies"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
+      "source_location": "L60",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_vscode_dev_workflow_vscode_dev_workflow",
+      "target": "docs_vscode_dev_workflow_copy_layout_templates"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
+      "source_location": "L71",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_vscode_dev_workflow_vscode_dev_workflow",
+      "target": "docs_vscode_dev_workflow_what_not_to_do_in_vscode_dev"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_vscode_dev_workflow_open_the_repo",
+      "target": "docs_vscode_dev_workflow_codeblock_2"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_vscode_dev_workflow_download_or_copy_web_files",
+      "target": "docs_vscode_dev_workflow_codeblock_3"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
+      "source_location": "L46",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_vscode_dev_workflow_download_or_copy_web_files",
+      "target": "docs_vscode_dev_workflow_codeblock_4"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "docs_vscode_dev_workflow_download_or_copy_web_files",
+      "target": "docs_vscode_dev_workflow_codeblock_5",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
+      "source_location": "L48",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_vscode_dev_workflow_copy_page_bodies",
+      "target": "docs_vscode_dev_workflow_codeblock_4"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
+      "source_location": "L56",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_vscode_dev_workflow_copy_page_bodies",
+      "target": "docs_vscode_dev_workflow_codeblock_5"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
+      "source_location": "L64",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_vscode_dev_workflow_copy_layout_templates",
+      "target": "docs_vscode_dev_workflow_codeblock_5"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
+      "source_location": "L62",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_vscode_dev_workflow_copy_page_bodies",
+      "target": "docs_vscode_dev_workflow_codeblock_6"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "docs_vscode_dev_workflow_copy_page_bodies",
+      "target": "docs_vscode_dev_workflow_codeblock_7",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
+      "source_location": "L75",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_vscode_dev_workflow_what_not_to_do_in_vscode_dev",
+      "target": "docs_vscode_dev_workflow_codeblock_6"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
+      "source_location": "L81",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_vscode_dev_workflow_copy_layout_templates",
+      "target": "docs_vscode_dev_workflow_codeblock_7"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
+      "source_location": "L90",
+      "weight": 1.0,
+      "source": "docs_vscode_dev_workflow_copy_layout_templates",
+      "target": "docs_vscode_dev_workflow_codeblock_8",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
+      "source_location": "L92",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_vscode_dev_workflow_what_not_to_do_in_vscode_dev",
+      "target": "docs_vscode_dev_workflow_codeblock_8"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
+      "source_location": "L103",
+      "weight": 1.0,
+      "source": "docs_vscode_dev_workflow_what_not_to_do_in_vscode_dev",
+      "target": "docs_vscode_dev_workflow_codeblock_9",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_power_pages_deployment_md",
+      "target": "docs_power_pages_deployment_power_pages_deployment_guide"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_power_pages_deployment_power_pages_deployment_guide",
+      "target": "docs_power_pages_deployment_1_create_or_open_the_power_pages_site"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_power_pages_deployment_power_pages_deployment_guide",
+      "target": "docs_power_pages_deployment_2_upload_web_files"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
+      "source_location": "L50",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_power_pages_deployment_power_pages_deployment_guide",
+      "target": "docs_power_pages_deployment_3_validate_web_files"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
+      "source_location": "L66",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_power_pages_deployment_power_pages_deployment_guide",
+      "target": "docs_power_pages_deployment_4_add_shared_layout_templates"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
+      "source_location": "L94",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_power_pages_deployment_power_pages_deployment_guide",
+      "target": "docs_power_pages_deployment_5_create_the_pages"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
+      "source_location": "L108",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_power_pages_deployment_power_pages_deployment_guide",
+      "target": "docs_power_pages_deployment_6_route_check"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
+      "source_location": "L122",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_power_pages_deployment_power_pages_deployment_guide",
+      "target": "docs_power_pages_deployment_7_clear_cache"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
+      "source_location": "L141",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_power_pages_deployment_power_pages_deployment_guide",
+      "target": "docs_power_pages_deployment_8_functional_test"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
+      "source_location": "L151",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_power_pages_deployment_power_pages_deployment_guide",
+      "target": "docs_power_pages_deployment_9_clean_deploy_folder"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
+      "source_location": "L155",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_power_pages_deployment_power_pages_deployment_guide",
+      "target": "docs_power_pages_deployment_9_do_not_deploy_preview"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_power_pages_deployment_2_upload_web_files",
+      "target": "docs_power_pages_deployment_codeblock_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_power_pages_deployment_3_validate_web_files",
+      "target": "docs_power_pages_deployment_codeblock_2"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
+      "source_location": "L70",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_power_pages_deployment_4_add_shared_layout_templates",
+      "target": "docs_power_pages_deployment_codeblock_3"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
+      "source_location": "L79",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_power_pages_deployment_4_add_shared_layout_templates",
+      "target": "docs_power_pages_deployment_codeblock_4"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
+      "source_location": "L86",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_power_pages_deployment_4_add_shared_layout_templates",
+      "target": "docs_power_pages_deployment_codeblock_5"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
+      "source_location": "L91",
+      "weight": 1.0,
+      "source": "docs_power_pages_deployment_6_route_check",
+      "target": "docs_power_pages_deployment_codeblock_5",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
+      "source_location": "L112",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_power_pages_deployment_6_route_check",
+      "target": "docs_power_pages_deployment_codeblock_6"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
+      "source_location": "L110",
+      "weight": 1.0,
+      "source": "docs_power_pages_deployment_7_clear_cache",
+      "target": "docs_power_pages_deployment_codeblock_6",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
+      "source_location": "L131",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_power_pages_deployment_7_clear_cache",
+      "target": "docs_power_pages_deployment_codeblock_7"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
+      "source_location": "L137",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_power_pages_deployment_7_clear_cache",
+      "target": "docs_power_pages_deployment_codeblock_8"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/GUIDANCE-DATA-OPTIONS.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_guidance_data_options_md",
+      "target": "docs_guidance_data_options_guidance_data_options"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/GUIDANCE-DATA-OPTIONS.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_guidance_data_options_guidance_data_options",
+      "target": "docs_guidance_data_options_codeblock_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/GUIDANCE-DATA-OPTIONS.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_guidance_data_options_guidance_data_options",
+      "target": "docs_guidance_data_options_codeblock_2"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/GUIDANCE-DATA-OPTIONS.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_guidance_data_options_guidance_data_options",
+      "target": "docs_guidance_data_options_current_csv_format"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/GUIDANCE-DATA-OPTIONS.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_guidance_data_options_guidance_data_options",
+      "target": "docs_guidance_data_options_option_1_sharepoint_excel_power_automate_csv"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/GUIDANCE-DATA-OPTIONS.md",
+      "source_location": "L73",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_guidance_data_options_guidance_data_options",
+      "target": "docs_guidance_data_options_option_2_sharepoint_list_or_excel_dataverse_power_pages"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/GUIDANCE-DATA-OPTIONS.md",
+      "source_location": "L100",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_guidance_data_options_guidance_data_options",
+      "target": "docs_guidance_data_options_why_not_direct_xlsx_parsing_in_browser"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/GUIDANCE-DATA-OPTIONS.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_guidance_data_options_current_csv_format",
+      "target": "docs_guidance_data_options_codeblock_3"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/GUIDANCE-DATA-OPTIONS.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_guidance_data_options_current_csv_format",
+      "target": "docs_guidance_data_options_codeblock_4"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/GUIDANCE-DATA-OPTIONS.md",
+      "source_location": "L37",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_guidance_data_options_option_1_sharepoint_excel_power_automate_csv",
+      "target": "docs_guidance_data_options_codeblock_5"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/GUIDANCE-DATA-OPTIONS.md",
+      "source_location": "L46",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_guidance_data_options_option_1_sharepoint_excel_power_automate_csv",
+      "target": "docs_guidance_data_options_codeblock_6"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/GUIDANCE-DATA-OPTIONS.md",
+      "source_location": "L52",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_guidance_data_options_option_1_sharepoint_excel_power_automate_csv",
+      "target": "docs_guidance_data_options_codeblock_7"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/GUIDANCE-DATA-OPTIONS.md",
+      "source_location": "L79",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_guidance_data_options_option_2_sharepoint_list_or_excel_dataverse_power_pages",
+      "target": "docs_guidance_data_options_codeblock_8"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "power-pages/web-files/org-structure.js",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "power_pages_web_files_org_structure_js",
-      "target": "web_files_org_structure_clearmatches",
-      "confidence_score": 1.0
+      "target": "web_files_org_structure_clearmatches"
     },
     {
       "relation": "contains",
@@ -1011,9 +1876,9 @@
       "source_file": "power-pages/web-files/org-structure.js",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "power_pages_web_files_org_structure_js",
-      "target": "web_files_org_structure_updatefeedback",
-      "confidence_score": 1.0
+      "target": "web_files_org_structure_updatefeedback"
     },
     {
       "relation": "contains",
@@ -1021,9 +1886,9 @@
       "source_file": "power-pages/web-files/org-structure.js",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "power_pages_web_files_org_structure_js",
-      "target": "web_files_org_structure_getpodname",
-      "confidence_score": 1.0
+      "target": "web_files_org_structure_getpodname"
     },
     {
       "relation": "contains",
@@ -1031,9 +1896,9 @@
       "source_file": "power-pages/web-files/org-structure.js",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "power_pages_web_files_org_structure_js",
-      "target": "web_files_org_structure_runsearch",
-      "confidence_score": 1.0
+      "target": "web_files_org_structure_runsearch"
     },
     {
       "relation": "calls",
@@ -1042,9 +1907,9 @@
       "source_file": "power-pages/web-files/org-structure.js",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_files_org_structure_runsearch",
-      "target": "web_files_org_structure_clearmatches",
-      "confidence_score": 1.0
+      "target": "web_files_org_structure_clearmatches"
     },
     {
       "relation": "calls",
@@ -1053,9 +1918,9 @@
       "source_file": "power-pages/web-files/org-structure.js",
       "source_location": "L43",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_files_org_structure_runsearch",
-      "target": "web_files_org_structure_updatefeedback",
-      "confidence_score": 1.0
+      "target": "web_files_org_structure_updatefeedback"
     },
     {
       "relation": "calls",
@@ -1064,9 +1929,9 @@
       "source_file": "power-pages/web-files/org-structure.js",
       "source_location": "L71",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_files_org_structure_runsearch",
-      "target": "web_files_org_structure_getpodname",
-      "confidence_score": 1.0
+      "target": "web_files_org_structure_getpodname"
     },
     {
       "relation": "contains",
@@ -1074,9 +1939,9 @@
       "source_file": "power-pages/web-files/guidance-calendar.js",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "power_pages_web_files_guidance_calendar_js",
-      "target": "web_files_guidance_calendar_closeguidancemodal",
-      "confidence_score": 1.0
+      "target": "web_files_guidance_calendar_closeguidancemodal"
     },
     {
       "relation": "contains",
@@ -1084,9 +1949,9 @@
       "source_file": "power-pages/web-files/guidance-calendar.js",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "power_pages_web_files_guidance_calendar_js",
-      "target": "web_files_guidance_calendar_openguidancemodal",
-      "confidence_score": 1.0
+      "target": "web_files_guidance_calendar_openguidancemodal"
     },
     {
       "relation": "contains",
@@ -1094,9 +1959,9 @@
       "source_file": "power-pages/web-files/guidance-calendar.js",
       "source_location": "L64",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "power_pages_web_files_guidance_calendar_js",
-      "target": "web_files_guidance_calendar_parsecsv",
-      "confidence_score": 1.0
+      "target": "web_files_guidance_calendar_parsecsv"
     },
     {
       "relation": "contains",
@@ -1104,9 +1969,9 @@
       "source_file": "power-pages/web-files/guidance-calendar.js",
       "source_location": "L118",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "power_pages_web_files_guidance_calendar_js",
-      "target": "web_files_guidance_calendar_parselocaldate",
-      "confidence_score": 1.0
+      "target": "web_files_guidance_calendar_parselocaldate"
     },
     {
       "relation": "contains",
@@ -1114,9 +1979,9 @@
       "source_file": "power-pages/web-files/guidance-calendar.js",
       "source_location": "L123",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "power_pages_web_files_guidance_calendar_js",
-      "target": "web_files_guidance_calendar_formatdisplaydate",
-      "confidence_score": 1.0
+      "target": "web_files_guidance_calendar_formatdisplaydate"
     },
     {
       "relation": "contains",
@@ -1124,9 +1989,9 @@
       "source_file": "power-pages/web-files/guidance-calendar.js",
       "source_location": "L127",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "power_pages_web_files_guidance_calendar_js",
-      "target": "web_files_guidance_calendar_formatisodate",
-      "confidence_score": 1.0
+      "target": "web_files_guidance_calendar_formatisodate"
     },
     {
       "relation": "contains",
@@ -1134,9 +1999,9 @@
       "source_file": "power-pages/web-files/guidance-calendar.js",
       "source_location": "L135",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "power_pages_web_files_guidance_calendar_js",
-      "target": "web_files_guidance_calendar_getweekstart",
-      "confidence_score": 1.0
+      "target": "web_files_guidance_calendar_getweekstart"
     },
     {
       "relation": "contains",
@@ -1144,9 +2009,9 @@
       "source_file": "power-pages/web-files/guidance-calendar.js",
       "source_location": "L141",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "power_pages_web_files_guidance_calendar_js",
-      "target": "web_files_guidance_calendar_uniquevalues",
-      "confidence_score": 1.0
+      "target": "web_files_guidance_calendar_uniquevalues"
     },
     {
       "relation": "contains",
@@ -1154,9 +2019,9 @@
       "source_file": "power-pages/web-files/guidance-calendar.js",
       "source_location": "L145",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "power_pages_web_files_guidance_calendar_js",
-      "target": "web_files_guidance_calendar_setoptions",
-      "confidence_score": 1.0
+      "target": "web_files_guidance_calendar_setoptions"
     },
     {
       "relation": "contains",
@@ -1164,9 +2029,9 @@
       "source_file": "power-pages/web-files/guidance-calendar.js",
       "source_location": "L156",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "power_pages_web_files_guidance_calendar_js",
-      "target": "web_files_guidance_calendar_getfilteredguidance",
-      "confidence_score": 1.0
+      "target": "web_files_guidance_calendar_getfilteredguidance"
     },
     {
       "relation": "contains",
@@ -1174,9 +2039,9 @@
       "source_file": "power-pages/web-files/guidance-calendar.js",
       "source_location": "L165",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "power_pages_web_files_guidance_calendar_js",
-      "target": "web_files_guidance_calendar_createguidanceitem",
-      "confidence_score": 1.0
+      "target": "web_files_guidance_calendar_createguidanceitem"
     },
     {
       "relation": "contains",
@@ -1184,9 +2049,9 @@
       "source_file": "power-pages/web-files/guidance-calendar.js",
       "source_location": "L198",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "power_pages_web_files_guidance_calendar_js",
-      "target": "web_files_guidance_calendar_openguidancerecords",
-      "confidence_score": 1.0
+      "target": "web_files_guidance_calendar_openguidancerecords"
     },
     {
       "relation": "contains",
@@ -1194,9 +2059,9 @@
       "source_file": "power-pages/web-files/guidance-calendar.js",
       "source_location": "L214",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "power_pages_web_files_guidance_calendar_js",
-      "target": "web_files_guidance_calendar_initguidancecalendar",
-      "confidence_score": 1.0
+      "target": "web_files_guidance_calendar_initguidancecalendar"
     },
     {
       "relation": "calls",
@@ -1205,9 +2070,9 @@
       "source_file": "power-pages/web-files/guidance-calendar.js",
       "source_location": "L192",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_files_guidance_calendar_createguidanceitem",
-      "target": "web_files_guidance_calendar_openguidancemodal",
-      "confidence_score": 1.0
+      "target": "web_files_guidance_calendar_openguidancemodal"
     },
     {
       "relation": "calls",
@@ -1216,9 +2081,9 @@
       "source_file": "power-pages/web-files/guidance-calendar.js",
       "source_location": "L200",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_files_guidance_calendar_openguidancerecords",
-      "target": "web_files_guidance_calendar_openguidancemodal",
-      "confidence_score": 1.0
+      "target": "web_files_guidance_calendar_openguidancemodal"
     },
     {
       "relation": "calls",
@@ -1227,9 +2092,9 @@
       "source_file": "power-pages/web-files/guidance-calendar.js",
       "source_location": "L397",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_files_guidance_calendar_initguidancecalendar",
-      "target": "web_files_guidance_calendar_parsecsv",
-      "confidence_score": 1.0
+      "target": "web_files_guidance_calendar_parsecsv"
     },
     {
       "relation": "calls",
@@ -1238,9 +2103,9 @@
       "source_file": "power-pages/web-files/guidance-calendar.js",
       "source_location": "L398",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_files_guidance_calendar_initguidancecalendar",
-      "target": "web_files_guidance_calendar_parselocaldate",
-      "confidence_score": 1.0
+      "target": "web_files_guidance_calendar_parselocaldate"
     },
     {
       "relation": "calls",
@@ -1249,9 +2114,9 @@
       "source_file": "power-pages/web-files/guidance-calendar.js",
       "source_location": "L401",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_files_guidance_calendar_initguidancecalendar",
-      "target": "web_files_guidance_calendar_formatdisplaydate",
-      "confidence_score": 1.0
+      "target": "web_files_guidance_calendar_formatdisplaydate"
     },
     {
       "relation": "calls",
@@ -1260,9 +2125,9 @@
       "source_file": "power-pages/web-files/guidance-calendar.js",
       "source_location": "L404",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_files_guidance_calendar_initguidancecalendar",
-      "target": "web_files_guidance_calendar_formatisodate",
-      "confidence_score": 1.0
+      "target": "web_files_guidance_calendar_formatisodate"
     },
     {
       "relation": "calls",
@@ -1271,9 +2136,9 @@
       "source_file": "power-pages/web-files/guidance-calendar.js",
       "source_location": "L404",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_files_guidance_calendar_initguidancecalendar",
-      "target": "web_files_guidance_calendar_getweekstart",
-      "confidence_score": 1.0
+      "target": "web_files_guidance_calendar_getweekstart"
     },
     {
       "relation": "calls",
@@ -1292,9 +2157,9 @@
       "source_file": "power-pages/web-files/site-search.js",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "power_pages_web_files_site_search_js",
-      "target": "web_files_site_search_normalize",
-      "confidence_score": 1.0
+      "target": "web_files_site_search_normalize"
     },
     {
       "relation": "contains",
@@ -1302,9 +2167,9 @@
       "source_file": "power-pages/web-files/site-search.js",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "power_pages_web_files_site_search_js",
-      "target": "web_files_site_search_isvisible",
-      "confidence_score": 1.0
+      "target": "web_files_site_search_isvisible"
     },
     {
       "relation": "contains",
@@ -1312,9 +2177,9 @@
       "source_file": "power-pages/web-files/site-search.js",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "power_pages_web_files_site_search_js",
-      "target": "web_files_site_search_cleantext",
-      "confidence_score": 1.0
+      "target": "web_files_site_search_cleantext"
     },
     {
       "relation": "contains",
@@ -1322,9 +2187,9 @@
       "source_file": "power-pages/web-files/site-search.js",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "power_pages_web_files_site_search_js",
-      "target": "web_files_site_search_gettitle",
-      "confidence_score": 1.0
+      "target": "web_files_site_search_gettitle"
     },
     {
       "relation": "contains",
@@ -1332,9 +2197,9 @@
       "source_file": "power-pages/web-files/site-search.js",
       "source_location": "L39",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "power_pages_web_files_site_search_js",
-      "target": "web_files_site_search_getcategory",
-      "confidence_score": 1.0
+      "target": "web_files_site_search_getcategory"
     },
     {
       "relation": "contains",
@@ -1342,9 +2207,9 @@
       "source_file": "power-pages/web-files/site-search.js",
       "source_location": "L58",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "power_pages_web_files_site_search_js",
-      "target": "web_files_site_search_geturl",
-      "confidence_score": 1.0
+      "target": "web_files_site_search_geturl"
     },
     {
       "relation": "contains",
@@ -1352,9 +2217,9 @@
       "source_file": "power-pages/web-files/site-search.js",
       "source_location": "L73",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "power_pages_web_files_site_search_js",
-      "target": "web_files_site_search_getexcerpt",
-      "confidence_score": 1.0
+      "target": "web_files_site_search_getexcerpt"
     },
     {
       "relation": "contains",
@@ -1362,9 +2227,9 @@
       "source_file": "power-pages/web-files/site-search.js",
       "source_location": "L91",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "power_pages_web_files_site_search_js",
-      "target": "web_files_site_search_collectrecords",
-      "confidence_score": 1.0
+      "target": "web_files_site_search_collectrecords"
     },
     {
       "relation": "contains",
@@ -1372,9 +2237,9 @@
       "source_file": "power-pages/web-files/site-search.js",
       "source_location": "L114",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "power_pages_web_files_site_search_js",
-      "target": "web_files_site_search_getpageurls",
-      "confidence_score": 1.0
+      "target": "web_files_site_search_getpageurls"
     },
     {
       "relation": "contains",
@@ -1382,9 +2247,9 @@
       "source_file": "power-pages/web-files/site-search.js",
       "source_location": "L128",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "power_pages_web_files_site_search_js",
-      "target": "web_files_site_search_fetchpagerecords",
-      "confidence_score": 1.0
+      "target": "web_files_site_search_fetchpagerecords"
     },
     {
       "relation": "contains",
@@ -1392,9 +2257,9 @@
       "source_file": "power-pages/web-files/site-search.js",
       "source_location": "L148",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "power_pages_web_files_site_search_js",
-      "target": "web_files_site_search_getrecords",
-      "confidence_score": 1.0
+      "target": "web_files_site_search_getrecords"
     },
     {
       "relation": "contains",
@@ -1402,9 +2267,9 @@
       "source_file": "power-pages/web-files/site-search.js",
       "source_location": "L170",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "power_pages_web_files_site_search_js",
-      "target": "web_files_site_search_scorerecord",
-      "confidence_score": 1.0
+      "target": "web_files_site_search_scorerecord"
     },
     {
       "relation": "contains",
@@ -1412,9 +2277,9 @@
       "source_file": "power-pages/web-files/site-search.js",
       "source_location": "L200",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "power_pages_web_files_site_search_js",
-      "target": "web_files_site_search_ensureresults",
-      "confidence_score": 1.0
+      "target": "web_files_site_search_ensureresults"
     },
     {
       "relation": "contains",
@@ -1422,9 +2287,9 @@
       "source_file": "power-pages/web-files/site-search.js",
       "source_location": "L224",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "power_pages_web_files_site_search_js",
-      "target": "web_files_site_search_renderresults",
-      "confidence_score": 1.0
+      "target": "web_files_site_search_renderresults"
     },
     {
       "relation": "contains",
@@ -1432,9 +2297,9 @@
       "source_file": "power-pages/web-files/site-search.js",
       "source_location": "L256",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "power_pages_web_files_site_search_js",
-      "target": "web_files_site_search_runsearch",
-      "confidence_score": 1.0
+      "target": "web_files_site_search_runsearch"
     },
     {
       "relation": "calls",
@@ -1443,9 +2308,9 @@
       "source_file": "power-pages/web-files/site-search.js",
       "source_location": "L107",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_files_site_search_collectrecords",
-      "target": "web_files_site_search_normalize",
-      "confidence_score": 1.0
+      "target": "web_files_site_search_normalize"
     },
     {
       "relation": "calls",
@@ -1454,9 +2319,9 @@
       "source_file": "power-pages/web-files/site-search.js",
       "source_location": "L171",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_files_site_search_scorerecord",
-      "target": "web_files_site_search_normalize",
-      "confidence_score": 1.0
+      "target": "web_files_site_search_normalize"
     },
     {
       "relation": "calls",
@@ -1465,9 +2330,9 @@
       "source_file": "power-pages/web-files/site-search.js",
       "source_location": "L94",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_files_site_search_collectrecords",
-      "target": "web_files_site_search_isvisible",
-      "confidence_score": 1.0
+      "target": "web_files_site_search_isvisible"
     },
     {
       "relation": "calls",
@@ -1476,9 +2341,9 @@
       "source_file": "power-pages/web-files/site-search.js",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_files_site_search_gettitle",
-      "target": "web_files_site_search_cleantext",
-      "confidence_score": 1.0
+      "target": "web_files_site_search_cleantext"
     },
     {
       "relation": "calls",
@@ -1487,9 +2352,9 @@
       "source_file": "power-pages/web-files/site-search.js",
       "source_location": "L74",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_files_site_search_getexcerpt",
-      "target": "web_files_site_search_cleantext",
-      "confidence_score": 1.0
+      "target": "web_files_site_search_cleantext"
     },
     {
       "relation": "calls",
@@ -1498,9 +2363,9 @@
       "source_file": "power-pages/web-files/site-search.js",
       "source_location": "L100",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_files_site_search_collectrecords",
-      "target": "web_files_site_search_cleantext",
-      "confidence_score": 1.0
+      "target": "web_files_site_search_cleantext"
     },
     {
       "relation": "calls",
@@ -1509,9 +2374,9 @@
       "source_file": "power-pages/web-files/site-search.js",
       "source_location": "L104",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_files_site_search_collectrecords",
-      "target": "web_files_site_search_gettitle",
-      "confidence_score": 1.0
+      "target": "web_files_site_search_gettitle"
     },
     {
       "relation": "calls",
@@ -1520,9 +2385,9 @@
       "source_file": "power-pages/web-files/site-search.js",
       "source_location": "L105",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_files_site_search_collectrecords",
-      "target": "web_files_site_search_getcategory",
-      "confidence_score": 1.0
+      "target": "web_files_site_search_getcategory"
     },
     {
       "relation": "calls",
@@ -1531,9 +2396,9 @@
       "source_file": "power-pages/web-files/site-search.js",
       "source_location": "L108",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_files_site_search_collectrecords",
-      "target": "web_files_site_search_geturl",
-      "confidence_score": 1.0
+      "target": "web_files_site_search_geturl"
     },
     {
       "relation": "calls",
@@ -1542,9 +2407,9 @@
       "source_file": "power-pages/web-files/site-search.js",
       "source_location": "L246",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_files_site_search_renderresults",
-      "target": "web_files_site_search_getexcerpt",
-      "confidence_score": 1.0
+      "target": "web_files_site_search_getexcerpt"
     },
     {
       "relation": "calls",
@@ -1553,9 +2418,9 @@
       "source_file": "power-pages/web-files/site-search.js",
       "source_location": "L140",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_files_site_search_fetchpagerecords",
-      "target": "web_files_site_search_collectrecords",
-      "confidence_score": 1.0
+      "target": "web_files_site_search_collectrecords"
     },
     {
       "relation": "calls",
@@ -1564,9 +2429,9 @@
       "source_file": "power-pages/web-files/site-search.js",
       "source_location": "L149",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_files_site_search_getrecords",
-      "target": "web_files_site_search_collectrecords",
-      "confidence_score": 1.0
+      "target": "web_files_site_search_collectrecords"
     },
     {
       "relation": "calls",
@@ -1575,9 +2440,9 @@
       "source_file": "power-pages/web-files/site-search.js",
       "source_location": "L150",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_files_site_search_getrecords",
-      "target": "web_files_site_search_getpageurls",
-      "confidence_score": 1.0
+      "target": "web_files_site_search_getpageurls"
     },
     {
       "relation": "calls",
@@ -1586,9 +2451,9 @@
       "source_file": "power-pages/web-files/site-search.js",
       "source_location": "L270",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_files_site_search_runsearch",
-      "target": "web_files_site_search_getrecords",
-      "confidence_score": 1.0
+      "target": "web_files_site_search_getrecords"
     },
     {
       "relation": "calls",
@@ -1597,9 +2462,9 @@
       "source_file": "power-pages/web-files/site-search.js",
       "source_location": "L272",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_files_site_search_runsearch",
-      "target": "web_files_site_search_scorerecord",
-      "confidence_score": 1.0
+      "target": "web_files_site_search_scorerecord"
     },
     {
       "relation": "calls",
@@ -1608,9 +2473,9 @@
       "source_file": "power-pages/web-files/site-search.js",
       "source_location": "L225",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_files_site_search_renderresults",
-      "target": "web_files_site_search_ensureresults",
-      "confidence_score": 1.0
+      "target": "web_files_site_search_ensureresults"
     },
     {
       "relation": "calls",
@@ -1619,9 +2484,9 @@
       "source_file": "power-pages/web-files/site-search.js",
       "source_location": "L258",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_files_site_search_runsearch",
-      "target": "web_files_site_search_ensureresults",
-      "confidence_score": 1.0
+      "target": "web_files_site_search_ensureresults"
     },
     {
       "relation": "calls",
@@ -1630,9 +2495,9 @@
       "source_file": "power-pages/web-files/site-search.js",
       "source_location": "L279",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_files_site_search_runsearch",
-      "target": "web_files_site_search_renderresults",
-      "confidence_score": 1.0
+      "target": "web_files_site_search_renderresults"
     },
     {
       "relation": "contains",
@@ -1640,9 +2505,9 @@
       "source_file": "power-pages/web-files/site.js",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "power_pages_web_files_site_js",
-      "target": "web_files_site_updatepageactivelink",
-      "confidence_score": 1.0
+      "target": "web_files_site_updatepageactivelink"
     },
     {
       "relation": "contains",
@@ -1650,9 +2515,9 @@
       "source_file": "power-pages/web-files/site.js",
       "source_location": "L45",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "power_pages_web_files_site_js",
-      "target": "web_files_site_setactivelink",
-      "confidence_score": 1.0
+      "target": "web_files_site_setactivelink"
     },
     {
       "relation": "contains",
@@ -1660,9 +2525,9 @@
       "source_file": "power-pages/web-files/site.js",
       "source_location": "L57",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "power_pages_web_files_site_js",
-      "target": "web_files_site_updateactivelink",
-      "confidence_score": 1.0
+      "target": "web_files_site_updateactivelink"
     },
     {
       "relation": "calls",
@@ -1671,529 +2536,9 @@
       "source_file": "power-pages/web-files/site.js",
       "source_location": "L76",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "web_files_site_updateactivelink",
-      "target": "web_files_site_setactivelink",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "source": "readme_md",
-      "target": "all_in_one_hub_readme_all_in_one_hub",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L7",
-      "weight": 1.0,
-      "source": "all_in_one_hub_readme_all_in_one_hub",
-      "target": "all_in_one_hub_readme_what_this_site_is",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L20",
-      "weight": 1.0,
-      "source": "all_in_one_hub_readme_all_in_one_hub",
-      "target": "all_in_one_hub_readme_visual_direction",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L31",
-      "weight": 1.0,
-      "source": "all_in_one_hub_readme_all_in_one_hub",
-      "target": "all_in_one_hub_readme_repository_structure",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L43",
-      "weight": 1.0,
-      "source": "all_in_one_hub_readme_all_in_one_hub",
-      "target": "all_in_one_hub_readme_important_files",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L58",
-      "weight": 1.0,
-      "source": "all_in_one_hub_readme_all_in_one_hub",
-      "target": "all_in_one_hub_readme_power_pages_deployment_summary",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L86",
-      "weight": 1.0,
-      "source": "all_in_one_hub_readme_all_in_one_hub",
-      "target": "all_in_one_hub_readme_local_preview",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L106",
-      "weight": 1.0,
-      "source": "all_in_one_hub_readme_all_in_one_hub",
-      "target": "all_in_one_hub_readme_guidance_data",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L132",
-      "weight": 1.0,
-      "source": "all_in_one_hub_readme_all_in_one_hub",
-      "target": "all_in_one_hub_readme_search_behavior",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L138",
-      "weight": 1.0,
-      "source": "all_in_one_hub_readme_all_in_one_hub",
-      "target": "all_in_one_hub_readme_client_deployment_checklist",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L33",
-      "weight": 1.0,
-      "source": "all_in_one_hub_readme_repository_structure",
-      "target": "all_in_one_hub_readme_codeblock_1",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L45",
-      "weight": 1.0,
-      "source": "all_in_one_hub_readme_important_files",
-      "target": "all_in_one_hub_readme_codeblock_2",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L62",
-      "weight": 1.0,
-      "source": "all_in_one_hub_readme_power_pages_deployment_summary",
-      "target": "all_in_one_hub_readme_codeblock_3",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L68",
-      "weight": 1.0,
-      "source": "all_in_one_hub_readme_power_pages_deployment_summary",
-      "target": "all_in_one_hub_readme_codeblock_4",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L82",
-      "weight": 1.0,
-      "source": "all_in_one_hub_readme_power_pages_deployment_summary",
-      "target": "all_in_one_hub_readme_codeblock_5",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L90",
-      "weight": 1.0,
-      "source": "all_in_one_hub_readme_local_preview",
-      "target": "all_in_one_hub_readme_codeblock_6",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L96",
-      "weight": 1.0,
-      "source": "all_in_one_hub_readme_local_preview",
-      "target": "all_in_one_hub_readme_codeblock_7",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L102",
-      "weight": 1.0,
-      "source": "all_in_one_hub_readme_local_preview",
-      "target": "all_in_one_hub_readme_codeblock_8",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L110",
-      "weight": 1.0,
-      "source": "all_in_one_hub_readme_guidance_data",
-      "target": "all_in_one_hub_readme_codeblock_9",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L116",
-      "weight": 1.0,
-      "source": "all_in_one_hub_readme_guidance_data",
-      "target": "all_in_one_hub_readme_codeblock_10",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L122",
-      "weight": 1.0,
-      "source": "all_in_one_hub_readme_guidance_data",
-      "target": "all_in_one_hub_readme_codeblock_11",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L128",
-      "weight": 1.0,
-      "source": "all_in_one_hub_readme_guidance_data",
-      "target": "all_in_one_hub_readme_codeblock_12",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "source": "docs_vscode_dev_workflow_md",
-      "target": "docs_vscode_dev_workflow_vscode_dev_workflow",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
-      "source_location": "L5",
-      "weight": 1.0,
-      "source": "docs_vscode_dev_workflow_vscode_dev_workflow",
-      "target": "docs_vscode_dev_workflow_codeblock_1",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
-      "source_location": "L11",
-      "weight": 1.0,
-      "source": "docs_vscode_dev_workflow_vscode_dev_workflow",
-      "target": "docs_vscode_dev_workflow_open_the_repo",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
-      "source_location": "L21",
-      "weight": 1.0,
-      "source": "docs_vscode_dev_workflow_vscode_dev_workflow",
-      "target": "docs_vscode_dev_workflow_download_or_copy_web_files",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
-      "source_location": "L44",
-      "weight": 1.0,
-      "source": "docs_vscode_dev_workflow_vscode_dev_workflow",
-      "target": "docs_vscode_dev_workflow_copy_page_bodies",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
-      "source_location": "L60",
-      "weight": 1.0,
-      "source": "docs_vscode_dev_workflow_vscode_dev_workflow",
-      "target": "docs_vscode_dev_workflow_copy_layout_templates",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
-      "source_location": "L71",
-      "weight": 1.0,
-      "source": "docs_vscode_dev_workflow_vscode_dev_workflow",
-      "target": "docs_vscode_dev_workflow_what_not_to_do_in_vscode_dev",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
-      "source_location": "L15",
-      "weight": 1.0,
-      "source": "docs_vscode_dev_workflow_open_the_repo",
-      "target": "docs_vscode_dev_workflow_codeblock_2",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
-      "source_location": "L25",
-      "weight": 1.0,
-      "source": "docs_vscode_dev_workflow_download_or_copy_web_files",
-      "target": "docs_vscode_dev_workflow_codeblock_3",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
-      "source_location": "L48",
-      "weight": 1.0,
-      "source": "docs_vscode_dev_workflow_copy_page_bodies",
-      "target": "docs_vscode_dev_workflow_codeblock_4",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
-      "source_location": "L64",
-      "weight": 1.0,
-      "source": "docs_vscode_dev_workflow_copy_layout_templates",
-      "target": "docs_vscode_dev_workflow_codeblock_5",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/VSCODE-DEV-WORKFLOW.md",
-      "source_location": "L75",
-      "weight": 1.0,
-      "source": "docs_vscode_dev_workflow_what_not_to_do_in_vscode_dev",
-      "target": "docs_vscode_dev_workflow_codeblock_6",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "source": "docs_power_pages_deployment_md",
-      "target": "docs_power_pages_deployment_power_pages_deployment_guide",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
-      "source_location": "L5",
-      "weight": 1.0,
-      "source": "docs_power_pages_deployment_power_pages_deployment_guide",
-      "target": "docs_power_pages_deployment_1_create_or_open_the_power_pages_site",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
-      "source_location": "L15",
-      "weight": 1.0,
-      "source": "docs_power_pages_deployment_power_pages_deployment_guide",
-      "target": "docs_power_pages_deployment_2_upload_web_files",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
-      "source_location": "L50",
-      "weight": 1.0,
-      "source": "docs_power_pages_deployment_power_pages_deployment_guide",
-      "target": "docs_power_pages_deployment_3_validate_web_files",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
-      "source_location": "L66",
-      "weight": 1.0,
-      "source": "docs_power_pages_deployment_power_pages_deployment_guide",
-      "target": "docs_power_pages_deployment_4_add_shared_layout_templates",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
-      "source_location": "L94",
-      "weight": 1.0,
-      "source": "docs_power_pages_deployment_power_pages_deployment_guide",
-      "target": "docs_power_pages_deployment_5_create_the_pages",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
-      "source_location": "L108",
-      "weight": 1.0,
-      "source": "docs_power_pages_deployment_power_pages_deployment_guide",
-      "target": "docs_power_pages_deployment_6_route_check",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
-      "source_location": "L122",
-      "weight": 1.0,
-      "source": "docs_power_pages_deployment_power_pages_deployment_guide",
-      "target": "docs_power_pages_deployment_7_clear_cache",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
-      "source_location": "L141",
-      "weight": 1.0,
-      "source": "docs_power_pages_deployment_power_pages_deployment_guide",
-      "target": "docs_power_pages_deployment_8_functional_test",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
-      "source_location": "L155",
-      "weight": 1.0,
-      "source": "docs_power_pages_deployment_power_pages_deployment_guide",
-      "target": "docs_power_pages_deployment_9_do_not_deploy_preview",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
-      "source_location": "L19",
-      "weight": 1.0,
-      "source": "docs_power_pages_deployment_2_upload_web_files",
-      "target": "docs_power_pages_deployment_codeblock_1",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
-      "source_location": "L54",
-      "weight": 1.0,
-      "source": "docs_power_pages_deployment_3_validate_web_files",
-      "target": "docs_power_pages_deployment_codeblock_2",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
-      "source_location": "L70",
-      "weight": 1.0,
-      "source": "docs_power_pages_deployment_4_add_shared_layout_templates",
-      "target": "docs_power_pages_deployment_codeblock_3",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
-      "source_location": "L79",
-      "weight": 1.0,
-      "source": "docs_power_pages_deployment_4_add_shared_layout_templates",
-      "target": "docs_power_pages_deployment_codeblock_4",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
-      "source_location": "L86",
-      "weight": 1.0,
-      "source": "docs_power_pages_deployment_4_add_shared_layout_templates",
-      "target": "docs_power_pages_deployment_codeblock_5",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
-      "source_location": "L112",
-      "weight": 1.0,
-      "source": "docs_power_pages_deployment_6_route_check",
-      "target": "docs_power_pages_deployment_codeblock_6",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
-      "source_location": "L131",
-      "weight": 1.0,
-      "source": "docs_power_pages_deployment_7_clear_cache",
-      "target": "docs_power_pages_deployment_codeblock_7",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
-      "source_location": "L137",
-      "weight": 1.0,
-      "source": "docs_power_pages_deployment_7_clear_cache",
-      "target": "docs_power_pages_deployment_codeblock_8",
-      "confidence_score": 1.0
+      "target": "web_files_site_setactivelink"
     },
     {
       "relation": "contains",
@@ -2201,141 +2546,11 @@
       "source_file": "docs/POWER-PAGES-DEPLOYMENT.md",
       "source_location": "L159",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_power_pages_deployment_9_do_not_deploy_preview",
-      "target": "docs_power_pages_deployment_codeblock_9",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/GUIDANCE-DATA-OPTIONS.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "source": "docs_guidance_data_options_md",
-      "target": "docs_guidance_data_options_guidance_data_options",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/GUIDANCE-DATA-OPTIONS.md",
-      "source_location": "L5",
-      "weight": 1.0,
-      "source": "docs_guidance_data_options_guidance_data_options",
-      "target": "docs_guidance_data_options_codeblock_1",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/GUIDANCE-DATA-OPTIONS.md",
-      "source_location": "L11",
-      "weight": 1.0,
-      "source": "docs_guidance_data_options_guidance_data_options",
-      "target": "docs_guidance_data_options_codeblock_2",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/GUIDANCE-DATA-OPTIONS.md",
-      "source_location": "L15",
-      "weight": 1.0,
-      "source": "docs_guidance_data_options_guidance_data_options",
-      "target": "docs_guidance_data_options_current_csv_format",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/GUIDANCE-DATA-OPTIONS.md",
-      "source_location": "L31",
-      "weight": 1.0,
-      "source": "docs_guidance_data_options_guidance_data_options",
-      "target": "docs_guidance_data_options_option_1_sharepoint_excel_power_automate_csv",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/GUIDANCE-DATA-OPTIONS.md",
-      "source_location": "L73",
-      "weight": 1.0,
-      "source": "docs_guidance_data_options_guidance_data_options",
-      "target": "docs_guidance_data_options_option_2_sharepoint_list_or_excel_dataverse_power_pages",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/GUIDANCE-DATA-OPTIONS.md",
-      "source_location": "L100",
-      "weight": 1.0,
-      "source": "docs_guidance_data_options_guidance_data_options",
-      "target": "docs_guidance_data_options_why_not_direct_xlsx_parsing_in_browser",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/GUIDANCE-DATA-OPTIONS.md",
-      "source_location": "L19",
-      "weight": 1.0,
-      "source": "docs_guidance_data_options_current_csv_format",
-      "target": "docs_guidance_data_options_codeblock_3",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/GUIDANCE-DATA-OPTIONS.md",
-      "source_location": "L25",
-      "weight": 1.0,
-      "source": "docs_guidance_data_options_current_csv_format",
-      "target": "docs_guidance_data_options_codeblock_4",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/GUIDANCE-DATA-OPTIONS.md",
-      "source_location": "L37",
-      "weight": 1.0,
-      "source": "docs_guidance_data_options_option_1_sharepoint_excel_power_automate_csv",
-      "target": "docs_guidance_data_options_codeblock_5",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/GUIDANCE-DATA-OPTIONS.md",
-      "source_location": "L46",
-      "weight": 1.0,
-      "source": "docs_guidance_data_options_option_1_sharepoint_excel_power_automate_csv",
-      "target": "docs_guidance_data_options_codeblock_6",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/GUIDANCE-DATA-OPTIONS.md",
-      "source_location": "L52",
-      "weight": 1.0,
-      "source": "docs_guidance_data_options_option_1_sharepoint_excel_power_automate_csv",
-      "target": "docs_guidance_data_options_codeblock_7",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/GUIDANCE-DATA-OPTIONS.md",
-      "source_location": "L79",
-      "weight": 1.0,
-      "source": "docs_guidance_data_options_option_2_sharepoint_list_or_excel_dataverse_power_pages",
-      "target": "docs_guidance_data_options_codeblock_8",
-      "confidence_score": 1.0
+      "target": "docs_power_pages_deployment_codeblock_9"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "50da623ca659164b7862395188f92dde40551e47"
+  "built_at_commit": "61afe4f32dcb0c369b8ac3485e2cd2e256ff9fce"
 }

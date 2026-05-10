@@ -33,23 +33,16 @@ The site uses the final dark glass direction:
 ```text
 ALL-in-One-Hub/
   power-pages/
-    pages/            Page body HTML fragments for Power Pages pages
-    web-files/        CSS, JavaScript, CSV, and SVG files to upload as Web Files
+    pages/            Home and Contact page body HTML fragments
+    web-files/        Theme CSS, CSV, and SVG files to upload as Web Files
     web-templates/    Shared layout header and footer templates
-  preview/            Local static preview only; do not deploy this folder
   docs/               Deployment and data setup guides
 ```
 
 ## Important files
 
 ```text
-power-pages/web-files/tokens.css
-power-pages/web-files/components.css
-power-pages/web-files/site.js
-power-pages/web-files/site-search.js
-power-pages/web-files/user-welcome.js
-power-pages/web-files/guidance-calendar.js
-power-pages/web-files/org-structure.js
+power-pages/web-files/theme.css
 power-pages/web-files/guidance-changes.csv
 power-pages/web-templates/layout-header.html
 power-pages/web-templates/layout-footer.html
@@ -63,19 +56,15 @@ Deploy only this folder:
 power-pages/
 ```
 
-Do not deploy:
-
-```text
-preview/
-```
-
 High-level order:
 
-1. Upload every file in `power-pages/web-files/` as a Power Pages Web File.
-2. Add `layout-header.html` and `layout-footer.html` as shared layout templates or paste into the master layout.
-3. Add every file in `power-pages/pages/` to the matching Power Pages page body.
-4. Clear Power Pages cache.
-5. Test all routes and static files.
+1. Upload every file in `power-pages/web-files/` as a Power Pages Web File, or paste `theme.css` into the portal `theme.css` file if that is the working styling path in the client tenant.
+2. Add `layout-header.html` and `layout-footer.html` as shared layout templates or paste into the master layout. The footer contains inline JavaScript, so no separate `.js` Web Files are required.
+3. Paste `power-pages/pages/home.html` into the Home page body.
+4. Paste `power-pages/pages/contact.html` into the Contact us page body.
+5. Keep Guidance, Process Library, Documents, Ownership, and Meet the Team as Home page scroll sections, not separate Power Pages pages.
+6. Clear Power Pages cache.
+7. Test all routes, anchors, and static files.
 
 For exact instructions, read:
 
@@ -83,19 +72,7 @@ For exact instructions, read:
 docs/POWER-PAGES-DEPLOYMENT.md
 ```
 
-## Local preview
-
-If you have a real terminal:
-
-```bash
-python3 -m http.server 3000
-```
-
-Then open:
-
-```text
-http://localhost:3000/preview/
-```
+## vscode.dev workflow
 
 If you only have `vscode.dev`, use it to copy/download files and upload/paste them into Power Pages. See:
 
@@ -131,7 +108,7 @@ docs/GUIDANCE-DATA-OPTIONS.md
 
 ## Search behavior
 
-The site includes `site-search.js`, which wires all normal search forms to shared site-wide client-side search. The Org / POD search remains specialized through `org-structure.js`.
+The footer template contains inline JavaScript for shared site search, user welcome text, guidance calendar behavior, and specialized Org / POD search.
 
 Search intentionally does not visually highlight page sections or add red outlines.
 
@@ -139,8 +116,9 @@ Search intentionally does not visually highlight page sections or add red outlin
 
 - Confirm all Web Files return 200, not 404.
 - Confirm `/guidance-changes.csv` loads for intended users.
-- Confirm Home, Guidance, Process Library, Documents, Ownership, Meet the Team, and Contact routes work.
+- Confirm Home scroll anchors work for `/#guidance`, `/#resources`, `/#documents`, `/#org`, and `/#meet-team`.
+- Confirm `/contact` works as the only separate content page.
 - Confirm global search works from normal search boxes.
 - Confirm Org POD search works separately.
-- Confirm browser console has no missing CSS/JS/CSV/SVG files.
+- Confirm browser console has no missing CSS/CSV/SVG files.
 - Clear Power Pages cache after every web file update.
