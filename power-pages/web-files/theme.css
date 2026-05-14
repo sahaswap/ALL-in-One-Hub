@@ -126,6 +126,19 @@ textarea {
   color: inherit;
 }
 
+html,
+body,
+.site-shell,
+.site-shell *,
+.modal-backdrop,
+.modal-backdrop *,
+button,
+input,
+select,
+textarea {
+  font-family: 'Segoe UI Variable', 'Segoe UI', Arial, sans-serif !important;
+}
+
 :focus-visible {
   outline: none;
   box-shadow: var(--shadow-focus);
