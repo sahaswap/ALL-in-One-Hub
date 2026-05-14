@@ -76,7 +76,6 @@ html {
   background-size: cover;
   overscroll-behavior-y: none;
   scroll-behavior: smooth;
-  scroll-padding-top: clamp(4rem, 9vh, 7rem);
 }
 
 body {
@@ -297,7 +296,7 @@ textarea {
   display: grid;
   gap: var(--space-4);
   padding: var(--space-3) 0 var(--space-4);
-  scroll-margin-top: clamp(4rem, 9vh, 7rem);
+  scroll-margin-top: var(--space-5);
 }
 
 .hero-copy {
@@ -464,7 +463,7 @@ textarea {
 
 .section {
   margin: var(--space-7) 0;
-  scroll-margin-top: clamp(4rem, 9vh, 7rem);
+  scroll-margin-top: var(--space-5);
 }
 
 .section-header {
