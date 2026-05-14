@@ -1,19 +1,17 @@
-    </main>
-    <footer class="site-footer glass site-footer--single">
-      <div class="footer-quote">Efficiency through centralized intelligence.</div>
-      <div class="footer-links">
-        <a href="/contact">Contact us</a>
-      </div>
-    </footer>
-    <div class="modal-backdrop" data-guidance-modal hidden>
-      <section class="guidance-modal glass" role="dialog" aria-modal="true" aria-labelledby="guidance-modal-title">
-        <button class="modal-close" type="button" data-guidance-close aria-label="Close guidance details">×</button>
-        <span class="doc-type" data-guidance-modal-date></span>
-        <h2 class="section-title" id="guidance-modal-title" data-guidance-modal-title></h2>
-        <div class="doc-meta"><span data-guidance-modal-owner></span></div>
-        <p class="card-text" data-guidance-modal-body></p>
-      </section>
+      </main>
+      <footer class="site-footer site-footer--single">
+        <div class="footer-quote">Efficiency through centralized intelligence.</div>
+      </footer>
     </div>
+  </div>
+  <div class="modal-backdrop" data-guidance-modal hidden>
+    <section class="guidance-modal glass" role="dialog" aria-modal="true" aria-labelledby="guidance-modal-title">
+      <button class="modal-close" type="button" data-guidance-close aria-label="Close guidance details">×</button>
+      <span class="doc-type" data-guidance-modal-date></span>
+      <h2 class="section-title" id="guidance-modal-title" data-guidance-modal-title></h2>
+      <div class="doc-meta"><span data-guidance-modal-owner></span></div>
+      <p class="card-text" data-guidance-modal-body></p>
+    </section>
   </div>
   <script>
 document.addEventListener('DOMContentLoaded', function () {
@@ -98,6 +96,56 @@ document.addEventListener('DOMContentLoaded', function () {
   updatePageActiveLink();
   window.addEventListener('scroll', updateActiveLink, { passive: true });
   window.addEventListener('resize', updateActiveLink);
+
+  if (nav) {
+    var navLine = document.createElement('span');
+    navLine.className = 'nav-line';
+    nav.appendChild(navLine);
+
+    var navLinkEls = Array.prototype.slice.call(nav.querySelectorAll('.nav-link'));
+
+    function moveNavLine(target) {
+      if (!target || !target.offsetParent) {
+        navLine.classList.remove('is-visible');
+        return;
+      }
+      navLine.style.setProperty('--h', target.offsetHeight + 'px');
+      navLine.style.setProperty('--y', target.offsetTop + 'px');
+      navLine.classList.add('is-visible');
+    }
+
+    function getActiveNavLink() {
+      return nav.querySelector('.nav-link.is-active');
+    }
+
+    navLinkEls.forEach(function (link) {
+      link.addEventListener('mouseenter', function () {
+        moveNavLine(link);
+      });
+    });
+
+    nav.addEventListener('mouseleave', function () {
+      moveNavLine(getActiveNavLink());
+    });
+
+    var navLineObserver = new MutationObserver(function () {
+      if (!nav.matches(':hover')) {
+        moveNavLine(getActiveNavLink());
+      }
+    });
+
+    navLinkEls.forEach(function (link) {
+      navLineObserver.observe(link, { attributes: true, attributeFilter: ['class'] });
+    });
+
+    window.addEventListener('resize', function () {
+      if (!nav.matches(':hover')) {
+        moveNavLine(getActiveNavLink());
+      }
+    });
+
+    moveNavLine(getActiveNavLink());
+  }
 });
   </script>
   <script>
@@ -143,11 +191,8 @@ document.addEventListener('DOMContentLoaded', function () {
     if (element.matches('.pod-card')) {
       return 'POD Structure';
     }
-    if (element.matches('.document-card')) {
-      return 'Document Library';
-    }
-    if (element.matches('.team-card')) {
-      return 'Meet the Team';
+    if (element.matches('.numbers-placeholder')) {
+      return 'Numbers';
     }
     if (element.matches('.guidance-change-panel')) {
       return 'Guidance Calendar';
