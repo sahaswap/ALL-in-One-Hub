@@ -1778,7 +1778,7 @@ textarea {
   padding: var(--space-3) var(--space-4) var(--space-4);
   border-radius: 0 0 var(--radius-lg) var(--radius-lg);
   overflow: visible;
-  zoom: 1;
+  zoom: 0.8;
 }
 
 .site-rail {
