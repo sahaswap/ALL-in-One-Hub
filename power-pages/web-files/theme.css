@@ -641,9 +641,16 @@ textarea {
   align-content: start;
 }
 
-.guidance-calendar-shell,
+.guidance-calendar-shell {
+  padding: var(--space-3);
+}
+
 .guidance-update-panel {
   padding: var(--space-4);
+}
+
+.guidance-calendar-shell,
+.guidance-update-panel {
   border: 1px solid var(--color-border-soft);
   border-radius: var(--radius-md);
   background: rgba(255, 255, 255, 0.1);
@@ -654,7 +661,7 @@ textarea {
   align-items: center;
   justify-content: space-between;
   gap: var(--space-3);
-  margin-bottom: var(--space-4);
+  margin-bottom: var(--space-3);
 }
 
 .calendar-nav-btn {
@@ -687,11 +694,11 @@ textarea {
 .guidance-month-grid {
   display: grid;
   grid-template-columns: repeat(7, minmax(0, 1fr));
-  gap: var(--space-2);
+  gap: 0.35rem;
 }
 
 .calendar-weekdays {
-  margin-bottom: var(--space-2);
+  margin-bottom: 0.35rem;
   color: var(--color-faint);
   font-size: var(--fs-caps);
   font-weight: var(--fw-bold);
@@ -702,8 +709,8 @@ textarea {
 
 .calendar-day {
   position: relative;
-  min-height: 82px;
-  padding: var(--space-2);
+  min-height: 48px;
+  padding: 0.45rem;
   border: 1px solid var(--color-border-soft);
   border-radius: var(--radius-sm);
   color: var(--color-muted);
