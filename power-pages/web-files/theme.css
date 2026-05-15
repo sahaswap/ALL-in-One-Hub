@@ -96,6 +96,14 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  font-family: var(--font-sans) !important;
+}
+
 body::before {
   position: fixed;
   inset: 0;
@@ -378,6 +386,26 @@ textarea {
 
 .search-panel input::placeholder {
   color: var(--color-faint);
+}
+
+#org [data-org-search-input] {
+  color: rgba(28, 34, 48, 0.58) !important;
+  -webkit-text-fill-color: rgba(28, 34, 48, 0.58) !important;
+  font-family: var(--font-sans) !important;
+  font-weight: var(--fw-regular);
+}
+
+#org [data-org-search-input]::placeholder {
+  color: rgba(28, 34, 48, 0.46) !important;
+  -webkit-text-fill-color: rgba(28, 34, 48, 0.46) !important;
+  opacity: 1;
+}
+
+#org .org-search-feedback {
+  color: rgba(28, 34, 48, 0.52) !important;
+  -webkit-text-fill-color: rgba(28, 34, 48, 0.52) !important;
+  font-family: var(--font-sans) !important;
+  font-weight: var(--fw-regular);
 }
 
 .search-overlay[hidden] {
