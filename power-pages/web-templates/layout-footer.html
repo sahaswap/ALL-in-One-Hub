@@ -13,6 +13,15 @@
       <p class="card-text" data-guidance-modal-body></p>
     </section>
   </div>
+  <div class="search-overlay" data-search-overlay hidden>
+    <button class="search-overlay__backdrop" type="button" data-search-close aria-label="Close search"></button>
+    <section class="search-overlay__dialog" role="dialog" aria-modal="true" aria-label="Search Analyst Hub">
+      <form class="search-panel glass search-panel--overlay" role="search" action="/" method="get" data-site-search-panel data-overlay-search-form>
+        <input type="search" name="q" placeholder="Search..." aria-label="Search analyst hub" autocomplete="off">
+        <button class="search-panel__icon-button" type="submit" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4.4-4.4"/></svg></button>
+      </form>
+    </section>
+  </div>
   <script>
 document.addEventListener('DOMContentLoaded', function () {
   var menuButton = document.querySelector('[data-menu-toggle]');
@@ -26,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  var cards = document.querySelectorAll('.glass-card, .resource-card, .metric-card, .document-card, .guidance-change-panel');
+  var cards = document.querySelectorAll('.glass-card, .resource-section, .metric-card, .document-card, .guidance-change-panel');
   cards.forEach(function (card, index) {
     card.style.setProperty('--reveal-delay', String(index * 70) + 'ms');
     card.classList.add('is-revealed');
@@ -97,6 +106,51 @@ document.addEventListener('DOMContentLoaded', function () {
   window.addEventListener('scroll', updateActiveLink, { passive: true });
   window.addEventListener('resize', updateActiveLink);
 
+  function closeSearchOverlay() {
+    var overlay = document.querySelector('[data-search-overlay]');
+
+    if (!overlay || overlay.hidden) {
+      return;
+    }
+
+    overlay.hidden = true;
+    document.documentElement.classList.remove('is-search-overlay-open');
+  }
+
+  function openSearchOverlay() {
+    var overlay = document.querySelector('[data-search-overlay]');
+    var searchInput = overlay ? overlay.querySelector('input[type="search"], input[name="q"]') : null;
+
+    if (!overlay || !searchInput) {
+      return false;
+    }
+
+    overlay.hidden = false;
+    document.documentElement.classList.add('is-search-overlay-open');
+    window.setTimeout(function () {
+      searchInput.focus({ preventScroll: true });
+    }, 80);
+    return true;
+  }
+
+  document.querySelectorAll('[data-search-nav-link]').forEach(function (link) {
+    link.addEventListener('click', function (event) {
+      if (openSearchOverlay()) {
+        event.preventDefault();
+      }
+    });
+  });
+
+  document.querySelectorAll('[data-search-close]').forEach(function (control) {
+    control.addEventListener('click', closeSearchOverlay);
+  });
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+      closeSearchOverlay();
+    }
+  });
+
   if (nav) {
     var navLine = document.createElement('span');
     navLine.className = 'nav-line';
@@ -150,9 +204,7 @@ document.addEventListener('DOMContentLoaded', function () {
   </script>
   <script>
 document.addEventListener('DOMContentLoaded', function () {
-  var forms = Array.prototype.slice.call(document.querySelectorAll('form.search-panel[role="search"]')).filter(function (form) {
-    return !form.hasAttribute('data-org-search-form');
-  });
+  var forms = Array.prototype.slice.call(document.querySelectorAll('form[data-site-search-panel][role="search"]'));
   var pageCache = {};
 
   if (!forms.length) {
@@ -197,7 +249,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (element.matches('.guidance-change-panel')) {
       return 'Guidance Calendar';
     }
-    if (element.matches('.resource-card')) {
+    if (element.matches('.resource-section')) {
       return 'Resource';
     }
     return 'Page';
@@ -237,12 +289,12 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function collectRecords(root, baseUrl) {
-    var selector = '.document-card, .team-card, .pod-card, .resource-card, .guidance-change-panel, section.hero, section.page-panel';
+    var selector = '.document-card, .team-card, .pod-card, .resource-section, .guidance-change-panel, section.hero, section.page-panel';
     return Array.prototype.slice.call(root.querySelectorAll(selector)).filter(function (element) {
       if (!isVisible(element)) {
         return false;
       }
-      if (element.matches('section.page-panel') && element.querySelector('.document-card, .team-card, .pod-card, .resource-card')) {
+      if (element.matches('section.page-panel') && element.querySelector('.document-card, .team-card, .pod-card, .resource-section')) {
         return false;
       }
       return cleanText(element.textContent).length > 24;
@@ -371,6 +423,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function renderResults(form, matches, query) {
     var ui = ensureResults(form);
+    var resultLimit = 10;
+    var visibleMatches = matches.slice(0, resultLimit);
     ui.list.innerHTML = '';
 
     if (!matches.length) {
@@ -378,9 +432,9 @@ document.addEventListener('DOMContentLoaded', function () {
       return;
     }
 
-    ui.feedback.textContent = matches.length + ' result' + (matches.length === 1 ? '' : 's') + ' found for “' + query + '”.';
+    ui.feedback.textContent = matches.length + ' result' + (matches.length === 1 ? '' : 's') + ' found for “' + query + '”.' + (matches.length > resultLimit ? ' Showing top ' + resultLimit + '.' : '');
 
-    matches.slice(0, 8).forEach(function (record) {
+    visibleMatches.forEach(function (record) {
       var result = document.createElement('a');
       var category = document.createElement('span');
       var title = document.createElement('strong');
@@ -393,10 +447,17 @@ document.addEventListener('DOMContentLoaded', function () {
       title.textContent = record.title;
       excerpt.textContent = getExcerpt(record.text, query);
       result.append(category, title, excerpt);
+      result.addEventListener('click', function () {
+        var overlay = document.querySelector('[data-search-overlay]');
+        if (overlay) {
+          overlay.hidden = true;
+          document.documentElement.classList.remove('is-search-overlay-open');
+        }
+      });
       ui.list.appendChild(result);
     });
 
-    if (matches[0] && matches[0].element) {
+    if (!form.hasAttribute('data-overlay-search-form') && matches[0] && matches[0].element) {
       matches[0].element.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
   }
@@ -438,10 +499,19 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     if (input) {
+      var liveSearchTimer;
+
       input.addEventListener('input', function () {
+        window.clearTimeout(liveSearchTimer);
+
         if (!input.value.trim()) {
           ensureResults(form).panel.remove();
+          return;
         }
+
+        liveSearchTimer = window.setTimeout(function () {
+          runSearch(form);
+        }, 140);
       });
 
       if (index === 0 && initialQuery && !input.value) {
