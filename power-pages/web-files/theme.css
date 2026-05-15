@@ -1141,6 +1141,11 @@ textarea {
   line-height: var(--lh-heading);
 }
 
+.pod-heading--single .pod-id {
+  border-bottom: none;
+  border-radius: calc(var(--radius-md) - 1px);
+}
+
 .pod-id.is-search-match,
 .pod-lead.is-search-match,
 .pod-member.is-search-match {
