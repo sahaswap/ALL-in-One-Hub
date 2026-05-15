@@ -796,11 +796,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  function createGuidanceItem(record, isExpanded, onToggle) {
+  function createGuidanceItem(record, isSelected, onSelect) {
     var button = document.createElement('button');
-    button.className = 'guidance-update-item' + (isExpanded ? ' is-expanded' : '');
+    button.className = 'guidance-update-item' + (isSelected ? ' is-selected' : '');
     button.type = 'button';
-    button.setAttribute('aria-expanded', String(isExpanded));
+    button.setAttribute('aria-pressed', String(isSelected));
 
     var date = document.createElement('span');
     date.className = 'doc-type';
@@ -822,17 +822,9 @@ document.addEventListener('DOMContentLoaded', function () {
     status.textContent = 'Status: ' + record.status;
     meta.append(owner, status);
 
-    var fullGuidance = document.createElement('p');
-    fullGuidance.className = 'guidance-update-full';
-    fullGuidance.textContent = record.fullGuidance || record.summary || '';
-
-    var action = document.createElement('span');
-    action.className = 'guidance-update-action';
-    action.textContent = isExpanded ? 'Show less' : 'Show full guidance';
-
-    button.append(date, title, summary, meta, fullGuidance, action);
+    button.append(date, title, summary, meta);
     button.addEventListener('click', function () {
-      onToggle(record);
+      onSelect(record);
     });
 
     return button;
@@ -971,12 +963,17 @@ document.addEventListener('DOMContentLoaded', function () {
     var grid = section.querySelector('[data-guidance-month-grid]');
     var resultsTitle = section.querySelector('[data-guidance-results-title]');
     var results = section.querySelector('[data-guidance-results]');
+    var detail = section.querySelector('[data-guidance-detail]');
+    var detailDate = section.querySelector('[data-guidance-detail-date]');
+    var detailTitle = section.querySelector('[data-guidance-detail-title]');
+    var detailOwner = section.querySelector('[data-guidance-detail-owner]');
+    var detailBody = section.querySelector('[data-guidance-detail-body]');
     var previous = section.querySelector('[data-guidance-prev]');
     var next = section.querySelector('[data-guidance-next]');
     var records = [];
     var calendarDate = new Date();
     var selectedDate = '';
-    var expandedGuidanceId = '';
+    var selectedGuidanceId = '';
     var guidanceDebug = {
       api: api || '',
       csv: source || '',
@@ -1000,6 +997,41 @@ document.addEventListener('DOMContentLoaded', function () {
         month: monthSelect.value,
         week: weekSelect.value
       };
+    }
+
+    function renderGuidanceDetail(record, shouldScroll) {
+      if (!detail) {
+        return;
+      }
+
+      if (!record) {
+        detail.hidden = true;
+        return;
+      }
+
+      if (detailDate) {
+        detailDate.textContent = record.displayDate || '';
+      }
+
+      if (detailTitle) {
+        detailTitle.textContent = record.title || '';
+      }
+
+      if (detailOwner) {
+        detailOwner.textContent = record.owner ? 'Owner: ' + record.owner : '';
+      }
+
+      if (detailBody) {
+        detailBody.textContent = record.fullGuidance || record.summary || '';
+      }
+
+      detail.hidden = false;
+
+      if (shouldScroll) {
+        window.requestAnimationFrame(function () {
+          detail.scrollIntoView({ block: 'start', behavior: 'smooth' });
+        });
+      }
     }
 
     function populateFilters() {
@@ -1058,6 +1090,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
       results.innerHTML = '';
 
+      if (selectedGuidanceId && !filteredRecords.some(function (record) { return record.id === selectedGuidanceId; })) {
+        selectedGuidanceId = '';
+        renderGuidanceDetail(null, false);
+      }
+
       if (resultsTitle) {
         resultsTitle.textContent = filteredRecords.length + ' guidance update' + (filteredRecords.length === 1 ? '' : 's') + ' found';
       }
@@ -1071,18 +1108,10 @@ document.addEventListener('DOMContentLoaded', function () {
       }
 
       filteredRecords.forEach(function (record) {
-        results.appendChild(createGuidanceItem(record, record.id === expandedGuidanceId, function (selectedRecord) {
-          expandedGuidanceId = expandedGuidanceId === selectedRecord.id ? '' : selectedRecord.id;
+        results.appendChild(createGuidanceItem(record, record.id === selectedGuidanceId, function (selectedRecord) {
+          selectedGuidanceId = selectedRecord.id;
           renderResults();
-
-          if (expandedGuidanceId) {
-            window.requestAnimationFrame(function () {
-              var expandedItem = results.querySelector('.guidance-update-item.is-expanded');
-              if (expandedItem) {
-                expandedItem.scrollIntoView({ block: 'nearest' });
-              }
-            });
-          }
+          renderGuidanceDetail(selectedRecord, true);
         }));
       });
     }
@@ -1132,7 +1161,8 @@ document.addEventListener('DOMContentLoaded', function () {
           dayButton.addEventListener('click', function (dateValue, recordsForDate) {
             return function () {
               selectedDate = dateValue;
-              expandedGuidanceId = recordsForDate.length === 1 ? recordsForDate[0].id : '';
+              selectedGuidanceId = '';
+              renderGuidanceDetail(null, false);
               renderCalendar();
               renderResults();
             };
@@ -1145,7 +1175,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function refresh() {
       selectedDate = '';
-      expandedGuidanceId = '';
+      selectedGuidanceId = '';
+      renderGuidanceDetail(null, false);
       populateFilters();
       var filterMonth = monthSelect.value;
 
@@ -1204,6 +1235,8 @@ document.addEventListener('DOMContentLoaded', function () {
     if (previous) {
       previous.addEventListener('click', function () {
         selectedDate = '';
+        selectedGuidanceId = '';
+        renderGuidanceDetail(null, false);
         calendarDate.setMonth(calendarDate.getMonth() - 1);
         renderCalendar();
         renderResults();
@@ -1213,6 +1246,8 @@ document.addEventListener('DOMContentLoaded', function () {
     if (next) {
       next.addEventListener('click', function () {
         selectedDate = '';
+        selectedGuidanceId = '';
+        renderGuidanceDetail(null, false);
         calendarDate.setMonth(calendarDate.getMonth() + 1);
         renderCalendar();
         renderResults();
