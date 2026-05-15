@@ -1,5 +1,5 @@
 :root {
-  --font-sans: 'Segoe UI Variable', 'Segoe UI', Arial, sans-serif;
+  --font-sans: 'Inter', 'Segoe UI Variable', 'Segoe UI', Arial, sans-serif;
   --color-page: #eef0f3;
   --color-page-top: #ffffff;
   --color-page-mid: #e2e5ea;
@@ -135,7 +135,7 @@ button,
 input,
 select,
 textarea {
-  font-family: 'Segoe UI Variable', 'Segoe UI', Arial, sans-serif !important;
+  font-family: 'Inter', 'Segoe UI Variable', 'Segoe UI', Arial, sans-serif !important;
 }
 
 :focus-visible {
