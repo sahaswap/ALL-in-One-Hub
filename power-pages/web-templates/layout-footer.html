@@ -731,8 +731,27 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function parseLocalDate(value) {
-    var parts = value.split('-').map(Number);
-    return new Date(parts[0], parts[1] - 1, parts[2]);
+    if (!value) {
+      return null;
+    }
+
+    var text = String(value).trim();
+    var isoMatch = text.match(/^(\d{4})-(\d{1,2})-(\d{1,2})/);
+    var slashMatch = text.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})/);
+
+    if (isoMatch) {
+      return new Date(Number(isoMatch[1]), Number(isoMatch[2]) - 1, Number(isoMatch[3]));
+    }
+
+    if (slashMatch) {
+      return new Date(Number(slashMatch[3]), Number(slashMatch[1]) - 1, Number(slashMatch[2]));
+    }
+
+    var parsed = new Date(text);
+    if (Number.isNaN(parsed.getTime())) {
+      return null;
+    }
+    return new Date(parsed.getFullYear(), parsed.getMonth(), parsed.getDate());
   }
 
   function formatDisplayDate(date) {
@@ -849,8 +868,93 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  function mapGuidanceApiRecord(record) {
+    return {
+      id: record.crfaa_analysthubguidanceupdatesid || record.crfaa_field2 || record.crfaa_field1 || '',
+      date: record.crfaa_field1 || '',
+      title: record.crfaa_field2 || '',
+      summary: record.crfaa_field3 || '',
+      owner: record.crfaa_field4 || '',
+      status: record.crfaa_field5 || '',
+      fullGuidance: record.crfaa_field6 || record.crfaa_field3 || ''
+    };
+  }
+
+  function loadGuidanceApi(api) {
+    return fetch(api, {
+      credentials: 'same-origin',
+      cache: 'no-store',
+      headers: {
+        Accept: 'application/json'
+      }
+    }).then(function (response) {
+      if (!response.ok) {
+        var error = new Error('Unable to load guidance API.');
+        error.status = response.status;
+        throw error;
+      }
+      return response.json();
+    }).then(function (payload) {
+      return (payload.value || []).map(mapGuidanceApiRecord);
+    });
+  }
+
+  function normalizeGuidanceRecords(rawRecords) {
+    return rawRecords.map(function (record) {
+      var date = parseLocalDate(record.date);
+      if (!date) {
+        return null;
+      }
+      return Object.assign({}, record, {
+        date: formatIsoDate(date),
+        sortDate: date,
+        displayDate: formatDisplayDate(date),
+        year: String(date.getFullYear()),
+        month: String(date.getMonth() + 1).padStart(2, '0'),
+        weekStart: formatIsoDate(getWeekStart(date))
+      });
+    }).filter(function (record) {
+      return record && (record.status || '').toLowerCase() === 'published';
+    }).sort(function (a, b) {
+      return b.sortDate - a.sortDate;
+    });
+  }
+
+  function loadGuidanceRecords(api, source, debug) {
+    if (api) {
+      debug.api = api;
+      return loadGuidanceApi(api).then(function (apiRecords) {
+        debug.source = 'dataverse';
+        debug.fallbackUsed = false;
+        debug.recordsLoaded = apiRecords.length;
+        return apiRecords;
+      }).catch(function (error) {
+        debug.apiError = {
+          message: error.message,
+          status: error.status || ''
+        };
+        debug.fallbackUsed = true;
+        return loadGuidanceCsv(source).then(function (csv) {
+          debug.source = 'csv-fallback';
+          var csvRecords = parseCsv(csv);
+          debug.recordsLoaded = csvRecords.length;
+          return csvRecords;
+        });
+      });
+    }
+
+    debug.source = 'csv';
+    return loadGuidanceCsv(source).then(function (csv) {
+      var csvRecords = parseCsv(csv);
+      debug.recordsLoaded = csvRecords.length;
+      return csvRecords;
+    });
+  }
+
   function initGuidanceCalendar(section) {
+    var api = section.getAttribute('data-guidance-api');
     var source = section.getAttribute('data-guidance-source');
+    var refreshMs = Number(section.getAttribute('data-guidance-refresh-ms') || 0);
     var yearSelect = section.querySelector('[data-guidance-year]');
     var monthSelect = section.querySelector('[data-guidance-month]');
     var weekSelect = section.querySelector('[data-guidance-week]');
@@ -863,6 +967,18 @@ document.addEventListener('DOMContentLoaded', function () {
     var records = [];
     var calendarDate = new Date();
     var selectedDate = '';
+    var guidanceDebug = {
+      api: api || '',
+      csv: source || '',
+      source: '',
+      fallbackUsed: false,
+      recordsLoaded: 0,
+      normalizedRecords: 0,
+      refreshMs: refreshMs,
+      lastLoadedAt: ''
+    };
+    window.AnalystHubDebug = window.AnalystHubDebug || {};
+    window.AnalystHubDebug.guidance = guidanceDebug;
 
     if (!source || !yearSelect || !monthSelect || !weekSelect || !grid || !results) {
       return;
@@ -1024,37 +1140,39 @@ document.addEventListener('DOMContentLoaded', function () {
       renderResults();
     }
 
-    loadGuidanceCsv(source)
-      .then(function (csv) {
-        records = parseCsv(csv).map(function (record) {
-          var date = parseLocalDate(record.date);
-          return Object.assign({}, record, {
-            sortDate: date,
-            displayDate: formatDisplayDate(date),
-            year: String(date.getFullYear()),
-            month: String(date.getMonth() + 1).padStart(2, '0'),
-            weekStart: formatIsoDate(getWeekStart(date))
-          });
-        }).filter(function (record) {
-          return (record.status || '').toLowerCase() === 'published';
-        }).sort(function (a, b) {
-          return b.sortDate - a.sortDate;
-        });
+    function reloadGuidance() {
+      guidanceDebug.lastLoadedAt = new Date().toISOString();
+      return loadGuidanceRecords(api, source, guidanceDebug)
+        .then(function (rawRecords) {
+          records = normalizeGuidanceRecords(rawRecords);
+          guidanceDebug.normalizedRecords = records.length;
 
-        if (records.length) {
-          calendarDate = new Date(records[0].sortDate.getFullYear(), records[0].sortDate.getMonth(), 1);
-        }
+          if (records.length) {
+            calendarDate = new Date(records[0].sortDate.getFullYear(), records[0].sortDate.getMonth(), 1);
+          }
 
-        refresh();
-      })
-      .catch(function () {
+          refresh();
+          console.info('Analyst Hub guidance debug', guidanceDebug);
+        })
+        .catch(function (error) {
+          guidanceDebug.loadError = {
+            message: error.message || String(error)
+          };
         if (title) {
           title.textContent = 'Guidance calendar unavailable';
         }
         if (resultsTitle) {
           resultsTitle.textContent = 'Unable to load updates';
         }
-      });
+          console.warn('Analyst Hub guidance debug', guidanceDebug);
+        });
+    }
+
+    reloadGuidance();
+
+    if (refreshMs > 0) {
+      window.setInterval(reloadGuidance, refreshMs);
+    }
 
     yearSelect.addEventListener('change', refresh);
     monthSelect.addEventListener('change', refresh);
