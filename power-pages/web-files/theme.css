@@ -830,8 +830,9 @@ html.is-search-overlay-open body {
 .guidance-update-panel {
   display: flex;
   flex-direction: column;
-  max-height: min(72vh, 720px);
-  min-height: 0;
+  height: min(86vh, 860px);
+  max-height: min(86vh, 860px);
+  min-height: min(70vh, 680px);
   padding: var(--space-4);
 }
 
@@ -937,7 +938,8 @@ html.is-search-overlay-open body {
   display: grid;
   gap: var(--space-3);
   margin-top: var(--space-3);
-  max-height: min(58vh, 560px);
+  flex: 1 1 auto;
+  max-height: min(74vh, 760px);
   min-height: 0;
   overflow-y: auto;
   overscroll-behavior: contain;
