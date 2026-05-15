@@ -15,20 +15,22 @@
     <div><h2 class="section-title">Guidance &amp; Updates</h2><p class="section-kicker">Reimagined guidance, policies, and analyst insights. Track published updates in a governed calendar view with quick access to the selected guidance details.</p></div>
   </div>
   <div class="page-panel glass guidance-change-panel" data-guidance-calendar data-guidance-source="/guidance-changes.csv">
-    <div class="guidance-calendar-controls">
-      <label><span>Year</span><select class="week-select" data-guidance-year aria-label="Select guidance year"></select></label>
-      <label><span>Month</span><select class="week-select" data-guidance-month aria-label="Select guidance month"></select></label>
-      <label><span>Week</span><select class="week-select" data-guidance-week aria-label="Select guidance week"></select></label>
-    </div>
     <div class="guidance-calendar-layout">
-      <div class="guidance-calendar-shell">
-        <div class="guidance-calendar-heading">
-          <button class="calendar-nav-btn" type="button" data-guidance-prev aria-label="Previous month">‹</button>
-          <h3 class="card-title" data-guidance-calendar-title>Loading guidance calendar</h3>
-          <button class="calendar-nav-btn" type="button" data-guidance-next aria-label="Next month">›</button>
+      <div class="guidance-calendar-column">
+        <div class="guidance-calendar-controls">
+          <label><span>Year</span><select class="week-select" data-guidance-year aria-label="Select guidance year"></select></label>
+          <label><span>Month</span><select class="week-select" data-guidance-month aria-label="Select guidance month"></select></label>
+          <label><span>Week</span><select class="week-select" data-guidance-week aria-label="Select guidance week"></select></label>
         </div>
-        <div class="calendar-weekdays" aria-hidden="true"><span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span></div>
-        <div class="guidance-month-grid" data-guidance-month-grid></div>
+        <div class="guidance-calendar-shell">
+          <div class="guidance-calendar-heading">
+            <button class="calendar-nav-btn" type="button" data-guidance-prev aria-label="Previous month">‹</button>
+            <h3 class="card-title" data-guidance-calendar-title>Loading guidance calendar</h3>
+            <button class="calendar-nav-btn" type="button" data-guidance-next aria-label="Next month">›</button>
+          </div>
+          <div class="calendar-weekdays" aria-hidden="true"><span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span></div>
+          <div class="guidance-month-grid" data-guidance-month-grid></div>
+        </div>
       </div>
       <aside class="guidance-update-panel">
         <span class="eyebrow">Selected guidance</span>
