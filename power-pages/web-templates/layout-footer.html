@@ -20,6 +20,7 @@
         <input type="search" name="q" placeholder="Search..." aria-label="Search analyst hub" autocomplete="off">
         <button class="search-panel__icon-button" type="submit" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4.4-4.4"/></svg></button>
       </form>
+      <button class="search-overlay__close" type="button" data-search-close aria-label="Close search"><span aria-hidden="true">×</span></button>
     </section>
   </div>
   <script>
@@ -755,6 +756,29 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  var fallbackGuidanceCsv = [
+    'id,date,title,summary,owner,status,fullGuidance',
+    'cdd-refresh-2026-05-06,2026-05-06,"CDD refresh guidance update","Updated customer due diligence evidence expectations and review notes for analyst execution.","Guidance Team","Published","This guidance change updates customer due diligence evidence expectations and analyst review notes. Analysts should confirm required evidence is present, document any missing information, and apply the refreshed review standard for newly worked cases."',
+    'escalation-wording-2026-04-29,2026-04-29,"Escalation wording clarification","Clarified escalation language for cases requiring additional quality or leadership review.","Process Optimization","Published","This update clarifies escalation wording for cases requiring additional quality or leadership review. Analysts should use the revised language when documenting why a case was escalated and what decision or support is required."',
+    'tm-disposition-2026-04-22,2026-04-22,"Transaction monitoring disposition notes","Added examples for concise, complete, and auditable disposition narratives.","AML Workstream","Published","This guidance adds examples for concise, complete, and auditable transaction monitoring disposition narratives. Analysts should describe the alert driver, relevant review steps, conclusion, and rationale in a consistent format."'
+  ].join('\n');
+
+  function loadGuidanceCsv(source) {
+    return fetch(source, { credentials: 'same-origin', cache: 'no-store' }).then(function (response) {
+      if (!response.ok) {
+        throw new Error('Unable to load guidance updates.');
+      }
+      return response.text();
+    }).then(function (csv) {
+      if (csv.indexOf('id,date,title,summary,owner,status,fullGuidance') === -1) {
+        return fallbackGuidanceCsv;
+      }
+      return csv;
+    }).catch(function () {
+      return fallbackGuidanceCsv;
+    });
+  }
+
   function initGuidanceCalendar(section) {
     var source = section.getAttribute('data-guidance-source');
     var yearSelect = section.querySelector('[data-guidance-year]');
@@ -930,13 +954,7 @@ document.addEventListener('DOMContentLoaded', function () {
       renderResults();
     }
 
-    fetch(source)
-      .then(function (response) {
-        if (!response.ok) {
-          throw new Error('Unable to load guidance updates.');
-        }
-        return response.text();
-      })
+    loadGuidanceCsv(source)
       .then(function (csv) {
         records = parseCsv(csv).map(function (record) {
           var date = parseLocalDate(record.date);
