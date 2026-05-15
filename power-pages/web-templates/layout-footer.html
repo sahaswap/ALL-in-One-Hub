@@ -37,7 +37,8 @@ document.addEventListener('DOMContentLoaded', function () {
       };
     }),
     imageLoaded: false,
-    imageError: false
+    imageError: false,
+    note: 'Inline PNG favicon is used because new favicon web files cannot be uploaded in this Power Pages environment.'
   };
   window.AnalystHubDebug = window.AnalystHubDebug || {};
   window.AnalystHubDebug.favicon = faviconDebug;
@@ -55,7 +56,6 @@ document.addEventListener('DOMContentLoaded', function () {
   } else {
     console.warn('Analyst Hub favicon debug', faviconDebug);
   }
-
   function getStyleDebug(selector) {
     var element = document.querySelector(selector);
     if (!element) {
